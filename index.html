@@ -4,31 +4,38 @@
 <head>
   <title>brain3d</title>
 
-  <style>
-    div#video-container {
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      -ms-transform: translate(-50%, -50%);
-      -webkit-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
-    }
-  </style>
+  <link rel="stylesheet" type="text/css" href="css/onepage-scroll.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
 
   <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+  <script src="js/jquery.onepage-scroll.min.js"></script>
 </head>
 
 <body>
 
-  <div id="video-container">
-    <video id="main-video" name="media">
+  <div id="video-container" class="center-container">
+    <video controls id="main-video" name="media">
       <source src="media/main.mp4" type="video/mp4">
       <!--<source src="http://pdl.vimeocdn.com/01630/284/307140747.mp4?token2=1420700140_579748d9764dfd0c57cb071c4177e52b&amp;aksessionid=11e67705d8d57e68" type="video/mp4">-->
       <!--<source src="media/Cortex-SD.mp4" type="video/mp4">-->
     </video>
   </div>
 
+  <div class="main">
+    <section class="section1">
+      <div id="brain-still-1" class="center-container">
+
+      </div>
+    </section>
+    <section>
+      <div class="center-container">
+
+      </div>
+    </section>
+  </div>
+
   <script src="js/main.js"></script>
+  <script src="js/scroll.js"></script>
 
 </body>
 </html>
