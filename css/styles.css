@@ -1,5 +1,32 @@
-div.center-container {
+div.container {
   position: fixed;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  height: 100%;
+  width: 100%;
+  /*background-color: #5e5e5e;*/
+}
+
+div.video-container {
+  height
+}
+
+#main-video {
+  width: 960px;
+  height: 720px;
+}
+
+div.section-container {
+  /*background-color: #000;
+  background-image: url('../img/hippocampus0030.png');
+  background-size: auto 100%;
+  background-repeat: no-repeat;*/
+  position: absolute;
+  height: 100%;
+  width: 100%;
   top: 50%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
@@ -7,6 +34,13 @@ div.center-container {
   transform: translate(-50%, -50%);
 }
 
+img.hippocampus {
+  position: absolute;
+}
+/*
 section.section1 {
   background-image: url('../img/Animation_Hippocampus0030.png');
+  background-size: auto 100%;
+  background-repeat: no-repeat;
 }
+*/
