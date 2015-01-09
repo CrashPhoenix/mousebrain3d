@@ -5,6 +5,7 @@
   <title>brain3d</title>
 
   <link rel="stylesheet" type="text/css" href="css/onepage-scroll.css">
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
 
   <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
@@ -13,18 +14,54 @@
 
 <body>
 
-    <div class="container">
+  <div class="pure-g">
+
+    <div class="pure-u-2-5">
+      <div class="pure-g">
+        <div class="pure-u-1-3"></div>
+        <div class="pure-u-7-12">
+          <div class="left">
+
+            <ul>
+              <li class="menu-header">Pick your brain region</li>
+              <li class="menu-item">Cortex</li>
+              <li class="menu-item">Hippocampus</li>
+              <li class="menu-item">Striatum</li>
+              <li class="menu-item">Hypothalamus</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pure-u-2-5">
+      <div class="right">
+        <div class="container">
+          <div class="video-container">
+            <video width="480" height="320" id="main-video" name="media">
+              <source src="media/main.mp4" type="video/mp4">
+              <!--<source src="http://pdl.vimeocdn.com/01630/284/307140747.mp4?token2=1420700140_579748d9764dfd0c57cb071c4177e52b&amp;aksessionid=11e67705d8d57e68" type="video/mp4">
+              <source src="media/Cortex-SD.mp4" type="video/mp4">-->
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+    <!--<div class="container">
       <div class="video-container">
         <video id="main-video" name="media">
           <source src="media/main.mp4" type="video/mp4">
           <!--<source src="http://pdl.vimeocdn.com/01630/284/307140747.mp4?token2=1420700140_579748d9764dfd0c57cb071c4177e52b&amp;aksessionid=11e67705d8d57e68" type="video/mp4">-->
           <!--<source src="media/Cortex-SD.mp4" type="video/mp4">-->
-        </video>
+        <!--</video>
       </div>
-    </div>
+    </div>-->
 
 
-  <div class="main">
+  <!--<div class="main">
     <section class="section1">
       <div id="brain-still-1" class="container">
         <div class="section-container">
@@ -37,7 +74,7 @@
 
       </div>
     </section>
-  </div>
+  </div>-->
 
   <script src="js/main.js"></script>
   <script src="js/scroll.js"></script>
