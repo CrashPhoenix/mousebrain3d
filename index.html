@@ -10,6 +10,7 @@
 
   <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
   <script src="js/jquery.onepage-scroll.min.js"></script>
+  <script src="js/jquery.motio.min.js"></script>
 </head>
 
 <body>
@@ -24,8 +25,8 @@
 
             <ul>
               <li class="menu-header">Pick your brain region</li>
-              <li class="menu-item">Cortex</li>
-              <li class="menu-item">Hippocampus</li>
+              <li id="cortex-btn" class="menu-item">Cortex</li>
+              <li id="hippocampus-btn" class="menu-item">Hippocampus</li>
               <li class="menu-item">Striatum</li>
               <li class="menu-item">Hypothalamus</li>
             </ul>
@@ -37,13 +38,16 @@
     <div class="pure-u-2-5">
       <div class="right">
         <div class="container">
-          <div class="video-container">
+          <!--<div class="video-container">
             <video width="480" height="320" id="main-video" name="media">
               <source src="media/main.mp4" type="video/mp4">
               <!--<source src="http://pdl.vimeocdn.com/01630/284/307140747.mp4?token2=1420700140_579748d9764dfd0c57cb071c4177e52b&amp;aksessionid=11e67705d8d57e68" type="video/mp4">
               <source src="media/Cortex-SD.mp4" type="video/mp4">-->
-            </video>
-          </div>
+            <!--</video>
+          </div>-->
+          <div id="placeholder" class="sprite"></div>
+          <div id="cortex" class="sprite"></div>
+          <div id="hippocampus" class="sprite"></div>
         </div>
       </div>
     </div>

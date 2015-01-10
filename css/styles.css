@@ -30,3 +30,20 @@ li {
   background-color: #F7931D;
   border-radius: 25px;
 }
+
+.sprite {
+  width: 418px;
+  height: 312px;
+}
+
+#placeholder {
+  background: url('../sprites/cortex/Animation_Cortex0001.png');
+}
+
+#cortex {
+  background: url('../spritesheets/cortex.png');
+}
+
+#hippocampus {
+  background: url('../spritesheets/hippocampus.png');
+}
