@@ -35,4 +35,79 @@ $(function () {
       }
     }
   });
+
+  $("#hippocampus-vid").overlay({
+    target: "#overlay",
+    closeOnEsc: false, // see comment on flowplayer keyboard option above
+    top: "10%",
+    left: "20%",
+    mask: {
+      color: "#000",
+      opacity: 0.3
+    },
+    speed: "slow",
+    onBeforeLoad: function () {
+      api.load([{
+        mp4: "media/hippocampus-SD.mp4"
+      }]);
+    },
+    onBeforeClose: function (e) {
+      if (api.loading) {
+        e.preventDefault();
+      } else {
+        // important! unload the player
+        api.unload();
+      }
+    }
+  });
+
+  $("#hippocampus-drug-vid").overlay({
+    target: "#overlay",
+    closeOnEsc: false, // see comment on flowplayer keyboard option above
+    top: "10%",
+    left: "20%",
+    mask: {
+      color: "#000",
+      opacity: 0.3
+    },
+    speed: "slow",
+    onBeforeLoad: function () {
+      api.load([{
+        mp4: "media/HippocampusDrug-SD.mp4"
+      }]);
+    },
+    onBeforeClose: function (e) {
+      if (api.loading) {
+        e.preventDefault();
+      } else {
+        // important! unload the player
+        api.unload();
+      }
+    }
+  });
+
+  $("#hippocampus-behavior-vid").overlay({
+    target: "#overlay",
+    closeOnEsc: false, // see comment on flowplayer keyboard option above
+    top: "10%",
+    left: "20%",
+    mask: {
+      color: "#000",
+      opacity: 0.3
+    },
+    speed: "slow",
+    onBeforeLoad: function () {
+      api.load([{
+        mp4: "media/Hippocampus_behavior.mp4"
+      }]);
+    },
+    onBeforeClose: function (e) {
+      if (api.loading) {
+        e.preventDefault();
+      } else {
+        // important! unload the player
+        api.unload();
+      }
+    }
+  });
 });

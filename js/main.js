@@ -1,6 +1,8 @@
 (function(){
-  var cortex = $('#cortex').hide();
-  var hippocampus = $('#hippocampus').hide();
+  $('#cortex').hide();
+  $('#cortex-description').hide();
+  $('#hippocampus').hide();
+  $('#hippocampus-description').hide();
 })();
 
 window.onload = function() {
@@ -32,10 +34,12 @@ window.onload = function() {
     placeholder.hide()
     hippocampus.hide()
     $('#hippocampus-btn').removeClass('active');
+    $('#hippocampus-description').hide();
 
     // Turn on this section
     $(this).addClass('active');
     cortex.show();
+    $('#cortex-description').fadeIn();
 
     var sprite = new Motio(cortex[0], {
       fps: 20,
@@ -57,10 +61,12 @@ window.onload = function() {
     placeholder.hide()
     cortex.hide()
     $('#cortex-btn').removeClass('active');
+    $('#cortex-description').hide();
 
     // Turn on this section
     $(this).addClass('active');
     hippocampus.show();
+    $('#hippocampus-description').fadeIn();
 
     var sprite = new Motio(hippocampus[0], {
       fps: 20,
