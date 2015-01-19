@@ -27,6 +27,11 @@ img.brain-thumbnail {
   display: inline-block;
 }
 
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
 .menu {
   background-color: #d9d9d9;
 }
@@ -38,7 +43,10 @@ img.brain-thumbnail {
   padding: 0.25em 0 0.25em 0;
 }
 
-.menu-item:hover, .menu-item:hover .menu-title {
+.menu-item:hover,
+.menu-item:hover .menu-title,
+.menu-item.active,
+.menu-item.active .menu-title {
   color: #fff;
   background-color: #666666;
 }
@@ -58,11 +66,6 @@ img.brain-thumbnail {
 .menu-title {
   font-size: 1em;
   color: #0071BA;
-}
-
-ul {
-  padding: 0;
-  list-style-type: none;
 }
 
 

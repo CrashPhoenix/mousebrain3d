@@ -28,9 +28,15 @@ window.onload = function() {
     if($('#cortex-btn').data('clicked') == 'yes')return;
     turnOffClick('#cortex-btn');
 
+    // Turn off other sections
     placeholder.hide()
     hippocampus.hide()
+    $('#hippocampus-btn').removeClass('active');
+
+    // Turn on this section
+    $(this).addClass('active');
     cortex.show();
+
     var sprite = new Motio(cortex[0], {
       fps: 20,
       frames: 31
@@ -47,9 +53,15 @@ window.onload = function() {
     if($('#hippocampus-btn').data('clicked') == 'yes')return;
     turnOffClick('#hippocampus-btn');
 
+    // Turn off other sections
     placeholder.hide()
     cortex.hide()
+    $('#cortex-btn').removeClass('active');
+
+    // Turn on this section
+    $(this).addClass('active');
     hippocampus.show();
+
     var sprite = new Motio(hippocampus[0], {
       fps: 20,
       frames: 31
