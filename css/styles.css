@@ -19,7 +19,7 @@ div.brain-container {
 
 div.brain-description {
   color: #666666;
-  font-size: 1em;
+  font-size: 0.8em;
 }
 
 img.brain-thumbnail {
@@ -76,7 +76,7 @@ ul {
 }
 
 #placeholder {
-  background: url('../sprites/cortex/Animation_Cortex0001.png');
+  background: url('../img/brain_placeholder_480x360.png');
 }
 
 #cortex {
