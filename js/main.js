@@ -22,7 +22,7 @@ window.onload = function() {
     cortex.show();
     var sprite = new Motio(cortex[0], {
       fps: 20,
-      frames: 30
+      frames: 31
     });
     /*sprite.toStart(true);*/
     sprite.play();
@@ -35,7 +35,7 @@ window.onload = function() {
     hippocampus.show();
     var sprite = new Motio(hippocampus[0], {
       fps: 20,
-      frames: 30
+      frames: 31
     });
     /*sprite.toStart(true);*/
     sprite.play();

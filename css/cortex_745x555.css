@@ -1,0 +1,45 @@
+/* ----------------------------------------------------
+   created with http://www.codeandweb.com/texturepacker 
+   ----------------------------------------------------
+   $TexturePacker:SmartUpdate:674515ff637ac6c815d47d051d0cd106:cb7d62c93928c58ce9be3c254ef0ac50:d0edea762cec9c025117d1da65e6d512$
+   ----------------------------------------------------
+
+   usage: <span class="{-spritename-} sprite"></span>
+
+   replace {-spritename-} with the sprite you like to use
+
+*/
+
+.sprite {display:inline-block; overflow:hidden; background-repeat: no-repeat;background-image:url(cortex.png);}
+
+.Animation_Cortex0000 {width:740px; height:555px; background-position: -2px -2px}
+.Animation_Cortex0001 {width:740px; height:555px; background-position: -744px -2px}
+.Animation_Cortex0002 {width:740px; height:555px; background-position: -1486px -2px}
+.Animation_Cortex0003 {width:740px; height:555px; background-position: -2228px -2px}
+.Animation_Cortex0004 {width:740px; height:555px; background-position: -2970px -2px}
+.Animation_Cortex0005 {width:740px; height:555px; background-position: -3712px -2px}
+.Animation_Cortex0006 {width:740px; height:555px; background-position: -4454px -2px}
+.Animation_Cortex0007 {width:740px; height:555px; background-position: -5196px -2px}
+.Animation_Cortex0008 {width:740px; height:555px; background-position: -5938px -2px}
+.Animation_Cortex0009 {width:740px; height:555px; background-position: -6680px -2px}
+.Animation_Cortex0010 {width:740px; height:555px; background-position: -7422px -2px}
+.Animation_Cortex0011 {width:740px; height:555px; background-position: -8164px -2px}
+.Animation_Cortex0012 {width:740px; height:555px; background-position: -8906px -2px}
+.Animation_Cortex0013 {width:740px; height:555px; background-position: -9648px -2px}
+.Animation_Cortex0014 {width:740px; height:555px; background-position: -10390px -2px}
+.Animation_Cortex0015 {width:740px; height:555px; background-position: -11132px -2px}
+.Animation_Cortex0016 {width:740px; height:555px; background-position: -11874px -2px}
+.Animation_Cortex0017 {width:740px; height:555px; background-position: -12616px -2px}
+.Animation_Cortex0018 {width:740px; height:555px; background-position: -13358px -2px}
+.Animation_Cortex0019 {width:740px; height:555px; background-position: -14100px -2px}
+.Animation_Cortex0020 {width:740px; height:555px; background-position: -14842px -2px}
+.Animation_Cortex0021 {width:740px; height:555px; background-position: -15584px -2px}
+.Animation_Cortex0022 {width:740px; height:555px; background-position: -16326px -2px}
+.Animation_Cortex0023 {width:740px; height:555px; background-position: -17068px -2px}
+.Animation_Cortex0024 {width:740px; height:555px; background-position: -17810px -2px}
+.Animation_Cortex0025 {width:740px; height:555px; background-position: -18552px -2px}
+.Animation_Cortex0026 {width:740px; height:555px; background-position: -19294px -2px}
+.Animation_Cortex0027 {width:740px; height:555px; background-position: -20036px -2px}
+.Animation_Cortex0028 {width:740px; height:555px; background-position: -20778px -2px}
+.Animation_Cortex0029 {width:740px; height:555px; background-position: -21520px -2px}
+.Animation_Cortex0030 {width:740px; height:555px; background-position: -22262px -2px}

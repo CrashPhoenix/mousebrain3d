@@ -19,7 +19,7 @@ div.brain-container {
 
 div.brain-description {
   color: #666666;
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 .menu {
@@ -58,8 +58,8 @@ li {
 /* BRAIN SPRITES */
 
 .sprite {
-  width: 418px;
-  height: 312px;
+  width: 482px;
+  height: 364px;
 }
 
 #placeholder {
@@ -67,7 +67,7 @@ li {
 }
 
 #cortex {
-  background: url('../spritesheets/cortex.png');
+  background: url('../spritesheets/480x360/cortex.png');
 }
 
 #hippocampus {
