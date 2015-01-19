@@ -1,0 +1,35 @@
+#overlay {
+  display: none;
+  width: 60%;
+  /* a border, so the player can fill the flexible-sized overlay */
+  border: 20px solid #fff;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 40px #000;
+  -moz-box-shadow: 0 0 40px #000;
+  box-shadow: 0 0 40px #000;
+}
+#overlay .close {
+  display: block;
+  position: absolute;
+  top: -42px;
+  right: -42px;
+  width: 28px;
+  height: 28px;
+  /* flowplayer close button in opposite color */
+  background-image: url(//releases.flowplayer.org/5.5.2/skin/img/black.png);
+  background-size: 37px 300px;
+  background-position: 8px -171px;
+  background-color: #eee;
+  -webkit-border-radius: 28px;
+  -moz-border-radius: 28px;
+  border-radius: 28px;
+  -webkit-box-shadow: 0 0 10px #777;
+  -moz-box-shadow: 0 0 10px #777;
+  box-shadow: 0 0 10px #777;
+  cursor: pointer;
+}
+@media(-webkit-min-device-pixel-ratio: 2) {
+  #overlay .close {
+    background-image: url(//releases.flowplayer.org/5.5.2/skin/img/black@x2.png);
+  }
+}
