@@ -22,25 +22,42 @@ div.brain-description {
   font-size: 1em;
 }
 
+img.brain-thumbnail {
+  vertical-align: text-top;
+  display: inline-block;
+}
+
 .menu {
   background-color: #d9d9d9;
-
 }
 
 .menu-item {
   color: #000;
   background-color: inherit;
   border-top: 2px #7f7476 dashed;
+  padding: 0.25em 0 0.25em 0;
 }
 
-.menu-item:hover {
-  /*padding: 10px;*/
+.menu-item:hover, .menu-item:hover .menu-title {
   color: #fff;
   background-color: #666666;
 }
 
 .menu-header {
   color: #000;
+  font-size: 1.125em;
+  padding: 1em;
+  height: 2.5em;
+}
+
+.menu-teaser {
+  font-size: 0.75em;
+  color: #A69C99;
+}
+
+.menu-title {
+  font-size: 1em;
+  color: #0071BA;
 }
 
 ul {
@@ -48,11 +65,7 @@ ul {
   list-style-type: none;
 }
 
-li {
-  /*margin: 25px;*/
-  padding: 2em;
-  height: 2.5em;
-}
+
 
 
 /* BRAIN SPRITES */
