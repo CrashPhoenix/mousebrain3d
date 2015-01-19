@@ -16,7 +16,18 @@ window.onload = function() {
 
   //var element = document.querySelector('#sprite');
 
+  var turnOnClick = function(selector) {
+    $(selector).data('clicked', 'no');
+  }
+  var turnOffClick = function(selector) {
+    $(selector).data('clicked', 'yes');
+  }
+
   $('#cortex-btn').click(function() {
+    //Check here if clicked already and return if so
+    if($('#cortex-btn').data('clicked') == 'yes')return;
+    turnOffClick('#cortex-btn');
+
     placeholder.hide()
     hippocampus.hide()
     cortex.show();
@@ -24,12 +35,18 @@ window.onload = function() {
       fps: 20,
       frames: 31
     });
-    /*sprite.toStart(true);*/
+
     sprite.play();
-    sprite.toEnd(false);
+    sprite.toEnd(false, function() {
+      turnOnClick('#cortex-btn');
+    });
   });
 
   $('#hippocampus-btn').click(function() {
+    //Check here if clicked already and return if so
+    if($('#hippocampus-btn').data('clicked') == 'yes')return;
+    turnOffClick('#hippocampus-btn');
+
     placeholder.hide()
     cortex.hide()
     hippocampus.show();
@@ -39,6 +56,8 @@ window.onload = function() {
     });
     /*sprite.toStart(true);*/
     sprite.play();
-    sprite.toEnd(false);
+    sprite.toEnd(false, function() {
+      turnOnClick('#hippocampus-btn');
+    });
   });
 }
