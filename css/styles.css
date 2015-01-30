@@ -74,18 +74,18 @@ ul {
 /* BRAIN SPRITES */
 
 .sprite {
-  width: 482px;
-  height: 364px;
+  width: 642px;
+  height: 484px;
 }
 
 #placeholder {
-  background: url('../img/brain_placeholder_480x360.png');
+  background: url('../img/brain_placeholder_640x480.png');
 }
 
 #cortex {
-  background: url('../spritesheets/480x360/cortex.png');
+  background: url('../spritesheets/640x480/cortex.png');
 }
 
 #hippocampus {
-  background: url('../spritesheets/480x360/hippocampus.png');
+  background: url('../spritesheets/640x480/hippocampus.png');
 }
