@@ -6,6 +6,10 @@
 })();
 
 window.onload = function() {
+  $('#details-btn').on('click', function() {
+    $('#brain-info-overlay').removeClass('beforeAnimation');
+    $('#brain-info-overlay').addClass('stretchRight');
+  })
   /*var mainVideo = document.querySelector('#main-video');
   mainVideo.play();
   mainVideo.addEventListener('canplaythrough',function() {
