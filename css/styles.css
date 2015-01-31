@@ -27,8 +27,8 @@ div.brain-container {
 }
 
 div.brain-description {
-  color: #DBDADA;
-  font-size: 0.8em;
+  color: #FFFFFF;
+  font-size: 1em;
 }
 
 img.brain-thumbnail {
@@ -71,8 +71,8 @@ ul li {
 }
 
 .menu-title {
-  font-size: 1em;
-  color: #0071BA;
+  font-size: 2em;
+  margin-bottom: 0;
 }
 
 a#details-btn {
@@ -125,6 +125,7 @@ a#details-btn {
 
 /* BRAIN INFO OVERLAY */
 #brain-info-overlay {
+  padding: 2em;
   position: absolute;
   height: 100%;
   background: #B0B0B0;
