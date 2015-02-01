@@ -27,8 +27,8 @@ div.brain-container {
 }
 
 div.brain-description {
-  color: #FFFFFF;
-  font-size: 1em;
+  color: #DBDADA;
+  font-size: 0.8em;
 }
 
 img.brain-thumbnail {
@@ -71,16 +71,11 @@ ul li {
 }
 
 .menu-title {
-  font-size: 2em;
-  margin-bottom: 0;
-  margin-top: 5px;
+  font-size: 1em;
+  color: #0071BA;
 }
 
-a#details-btn {
-  text-decoration: none;
-}
-
-#details-btn > div {
+#details-btn {
   width: 130px;
   /*height: 35px;*/
   padding: 10px;
@@ -90,46 +85,12 @@ a#details-btn {
   border-radius: 5px;
 }
 
-div.video-btn-container {
-  position: relative;
-}
-
-div.video-btn-container img {
-  max-width: 100%;
-  border: 2px solid #fff;
-}
-
-div.video-btn-container:hover img {
-  border: 2px solid #F06622;
-}
-
-div.video-label {
-  position: absolute;
-  bottom: 0px;
-  width: 100%;
-  text-align: center;
-  padding: 4px;
-}
-
-.video {
-  width: 100%;
-  border: 3px solid #F06622;
-}
-
-
-/* PLACEHOLDER OVERLAY */
-#placeholder-overlay {
-  position: absolute;
-  height: 100%;
-  background: #FFFFFF;
-}
-
 
 /* BRAIN SPRITES */
 #brain {
-  position: absolute;
   height: 100%;
   background: #DBDADA;
+  z-index: -1;
 }
 
 .sprite {
@@ -147,127 +108,4 @@ div.video-label {
 
 #hippocampus {
   background: url('../spritesheets/640x480/hippocampus.png');
-}
-
-
-/* BRAIN INFO OVERLAY */
-#brain-info-overlay {
-  padding: 2em;
-  position: absolute;
-  height: 100%;
-  background: #B0B0B0;
-}
-
-/* ANIMATIONS */
-/* Animations from http://www.justinaguilar.com/animations/ */
-.beforeAnimation {
-  transform: scaleX(0);
-}
-
-/*
-==============================================
-stretchRight
-==============================================
-*/
-.stretchRight{
-	animation-name: stretchRight;
-	-webkit-animation-name: stretchRight;
-
-	animation-duration: 1.5s;
-	-webkit-animation-duration: 1.5s;
-
-	animation-timing-function: ease-out;
-	-webkit-animation-timing-function: ease-out;
-
-	transform-origin: 0% 0%;
-	-ms-transform-origin: 0% 0%;
-	-webkit-transform-origin: 0% 0%;
-}
-
-@keyframes stretchRight {
-	0% {
-		transform: scaleX(0.3);
-	}
-	40% {
-		transform: scaleX(1.02);
-	}
-	60% {
-		transform: scaleX(0.98);
-	}
-	80% {
-		transform: scaleX(1.01);
-	}
-	100% {
-		transform: scaleX(0.98);
-	}
-	80% {
-		transform: scaleX(1.01);
-	}
-	100% {
-		transform: scaleX(1);
-	}
-}
-
-@-webkit-keyframes stretchRight {
-	0% {
-		-webkit-transform: scaleX(0.3);
-	}
-	40% {
-		-webkit-transform: scaleX(1.02);
-	}
-	60% {
-		-webkit-transform: scaleX(0.98);
-	}
-	80% {
-		-webkit-transform: scaleX(1.01);
-	}
-	100% {
-		-webkit-transform: scaleX(0.98);
-	}
-	80% {
-		-webkit-transform: scaleX(1.01);
-	}
-	100% {
-		-webkit-transform: scaleX(1);
-	}
-}
-
-/*
-==============================================
-contractRight
-==============================================
-*/
-
-.contractRight{
-	animation-name: contractRight;
-	-webkit-animation-name: contractRight;
-
-	animation-duration: 1.5s;
-	-webkit-animation-duration: 1.5s;
-
-	animation-timing-function: ease-out;
-	-webkit-animation-timing-function: ease-out;
-
-	transform-origin: 0% 0%;
-	-ms-transform-origin: 0% 0%;
-	-webkit-transform-origin: 0% 0%;
-}
-
-@keyframes contractRight {
-	0% {
-		transform: scaleX(1);
-	}
-	100% {
-		transform: scaleX(0);
-	}
-	}
-}
-
-@-webkit-keyframes contractRight {
-	0% {
-		-webkit-transform: scaleX(1);
-	}
-	100% {
-		-webkit-transform: scaleX(0);
-	}
 }

@@ -25,31 +25,8 @@ window.onload = function() {
     $(selector).data('clicked', 'yes');
   }
 
-  var showInfo = function() {
-    $('#brain-info-overlay').removeClass('beforeAnimation');
-    $('#brain-info-overlay').addClass('stretchRight');
-  }
-
-  var contractInfo = function() {
-    $('#brain-info-overlay').addClass('beforeAnimation');
-    $('#brain-info-overlay').removeClass('stretchRight');
-  }
-
-  $('#details-btn').on('click', showInfo);
-
-  /***********************
-   *
-   *  CORTEX BUTTON
-   *
-   ***********************/
   $('#cortex-btn').click(function() {
-    // Hide placeholder
-    $('#placeholder-overlay').fadeOut();
-
-    // Hide info overlay
-    contractInfo();
-
-    // Check here if clicked already and return if so
+    //Check here if clicked already and return if so
     if($('#cortex-btn').data('clicked') == 'yes')return;
     turnOffClick('#cortex-btn');
 
@@ -75,20 +52,8 @@ window.onload = function() {
     });
   });
 
-
-  /***********************
-   *
-   *  HIPPOCAMPUS BUTTON
-   *
-   ***********************/
   $('#hippocampus-btn').click(function() {
-    // Hide placeholder
-    $('#placeholder-overlay').fadeOut();
-
-    // Hide info overlay
-    contractInfo();
-
-    // Check here if clicked already and return if so
+    //Check here if clicked already and return if so
     if($('#hippocampus-btn').data('clicked') == 'yes')return;
     turnOffClick('#hippocampus-btn');
 

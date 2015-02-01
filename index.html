@@ -10,26 +10,22 @@
 
   <!-- flowplayer style -->
   <!-- a player skin as usual -->
-  <!--<link rel="stylesheet" href="//releases.flowplayer.org/5.5.2/skin/minimalist.css">-->
+  <link rel="stylesheet" href="//releases.flowplayer.org/5.5.2/skin/minimalist.css">
   <!-- the quality selector stylesheet -->
-  <!--<link rel="stylesheet" href="//flowplayer.org/drive/quality-selector.css">-->
-  <!--<link rel="stylesheet" href="css/bootstrap.min.css">-->
+  <link rel="stylesheet" href="//flowplayer.org/drive/quality-selector.css">
   <link rel="stylesheet" type="text/css" href="css/flowplayer.css">
 
   <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
   <!--<script src="js/jquery.onepage-scroll.min.js"></script>-->
   <script src="js/jquery.motio.min.js"></script>
 
-  <!-- Bootstrap for video carousel -->
-  <script src="js/bootstrap.min.js"></script>
-
   <!-- flowplayer javascript -->
-  <!--<script src="//releases.flowplayer.org/5.5.2/flowplayer.min.js"></script>-->
+  <script src="//releases.flowplayer.org/5.5.2/flowplayer.min.js"></script>
   <!-- the quality selector plugin -->
-  <!--<script src="//flowplayer.org/drive/quality-selector.js"></script>-->
+  <script src="//flowplayer.org/drive/quality-selector.js"></script>
   <!-- jQuery Tools -->
-  <!--<script src="http://cdn.jquerytools.org/1.2.7/all/jquery.tools.min.js"></script>
-  <script src="js/flowplayer.js"></script>-->
+  <script src="http://cdn.jquerytools.org/1.2.7/all/jquery.tools.min.js"></script>
+  <script src="js/flowplayer.js"></script>
 </head>
 
 <body>
@@ -46,217 +42,121 @@
         </div>
       </div>
 
-      <div class="pure-g" style="position:relative;height:100%;">
-        <!-- MENU BEGIN -->
-        <div class="pure-u-6-24">
-          <div class="menu">
-            <ul>
-              <li>
-                <div id="cortex-btn" class="menu-item">
-                  <img src="img/buttons/cortex-btn.png">
-                </div>
-              </li>
-              <li>
-                <div id="hippocampus-btn" class="menu-item">
-                  <img src="img/buttons/cortex-btn.png">
-                </div>
-              </li>
-              <li>
-                <div class="menu-item">
-                  <img src="img/buttons/cortex-btn.png">
-                </div>
-              </li>
-              <li>
-                <div class="menu-item">
-                  <img src="img/buttons/cortex-btn.png">
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div><!-- MENU END -->
-
-        <!-- BRAIN BEGIN-->
-        <div id="brain" class="pure-u-18-24">
-          <div class="pure-g">
-
-            <div class="pure-u-1-12"></div>
-
-            <div class="pure-u-5-6">
-              <div class="brain-container">
-                <div class="pure-g">
-
-                  <div class="pure-u-1">
-                    <div class="container">
-                      <!--<div class="video-container">
-                        <video width="480" height="320" id="main-video" name="media">
-                          <source src="media/main.mp4" type="video/mp4">
-                          <!--<source src="http://pdl.vimeocdn.com/01630/284/307140747.mp4?token2=1420700140_579748d9764dfd0c57cb071c4177e52b&amp;aksessionid=11e67705d8d57e68" type="video/mp4">
-                          <source src="media/Cortex-SD.mp4" type="video/mp4">-->
-                        <!--</video>
-                      </div>-->
-                      <div id="placeholder" class="sprite"></div>
-                      <div id="cortex" class="sprite"></div>
-                      <div id="hippocampus" class="sprite"></div>
-                    </div>
-                  </div>
-
-                  <div class="pure-u-1">
-                    <div class="container" align="center">
-                      <a id="details-btn" href="#"><div align="center">View Details</div></a>
-                    </div>
-                  </div>
-
-                </div>
+      <!-- MENU BEGIN -->
+      <div class="pure-u-6-24">
+        <div class="menu">
+          <ul>
+            <li>
+              <div id="cortex-btn" class="menu-item">
+                <img src="img/buttons/cortex-btn.png">
               </div>
-            </div>
+            </li>
+            <li>
+              <div id="hippocampus-btn" class="menu-item">
+                <img src="img/buttons/cortex-btn.png">
+              </div>
+            </li>
+            <li>
+              <div class="menu-item">
+                <img src="img/buttons/cortex-btn.png">
+              </div>
+            </li>
+            <li>
+              <div class="menu-item">
+                <img src="img/buttons/cortex-btn.png">
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div><!-- MENU END -->
 
-            <div class="pure-u-1-12"></div>
+      <!-- BRAIN BEGIN-->
+      <div id="brain" class="pure-u-18-24">
+        <div class="pure-g">
 
-          </div>
-        </div><!-- BRAIN END -->
+          <div class="pure-u-1-12"></div>
 
-        <!-- BRAIN INFO OVERLAY BEGIN-->
-        <div id="brain-info-overlay" class="pure-u-18-24 beforeAnimation">
-          <div class="pure-g">
+          <div class="pure-u-5-6">
+            <div class="brain-container">
+              <div class="pure-g">
 
-            <div class="pure-u-1-12"></div>
-
-            <div class="pure-u-5-6">
-              <div class="brain-description">
-
-                <!-- CORTEX DESCRIPTION -->
-                <div id="cortex-description">
-                  <div class="pure-g">
-
-                    <div class="pure-u-1">
-                      <p class="menu-title">Cortex Area</p>
-                      <p>Mouse senses various lorem ipsum</p>
-                    </div>
-
-                    <div class="pure-u-1-6">
-                      <div class="pure-g">
-
-                        <div class="pure-u-1 video-btn-container">
-                          <a id="cortex-vid">
-                            <img src="img/video_placeholder.jpg">
-                            <div class="video-label">Video 1</div>
-                          </a>
-                        </div>
-
-                      </div>
-                    </div>
-
-                    <div class="pure-u-1-24"></div>
-
-                    <div class="pure-u-2-3">
-                      <!--<div class="video-container">
-                        <video id="cortex-video" class="video" name="media">-->
-                          <!--<source src="media/main.mp4" type="video/mp4">-->
-                          <!--<source src="http://pdl.vimeocdn.com/01630/284/307140747.mp4?token2=1420700140_579748d9764dfd0c57cb071c4177e52b&amp;aksessionid=11e67705d8d57e68" type="video/mp4">-->
-                          <!--<source src="media/Cortex-SD.mp4" type="video/mp4">
-                        </video>
-                      </div>-->
-
-                      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                        <!-- Indicators -->
-                        <ol class="carousel-indicators">
-                          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                        </ol>
-
-                        <!-- Wrapper for slides -->
-                        <div class="carousel-inner" role="listbox">
-                          <div class="item active">
-                            <img src="img/video_placeholder.jpg" alt="...">
-                            <div class="carousel-caption">
-                              ...
-                            </div>
-                          </div>
-                          <div class="item">
-                            <img src="img/video_placeholder.jpg" alt="...">
-                            <div class="carousel-caption">
-                              ...
-                            </div>
-                          </div>
-                          ...
-                        </div>
-
-                        <!-- Controls -->
-                        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                          <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                          <span class="sr-only">Next</span>
-                        </a>
-                      </div>
-
-                    </div>
-
+                <div class="pure-u-1">
+                  <div class="container">
+                    <!--<div class="video-container">
+                      <video width="480" height="320" id="main-video" name="media">
+                        <source src="media/main.mp4" type="video/mp4">
+                        <!--<source src="http://pdl.vimeocdn.com/01630/284/307140747.mp4?token2=1420700140_579748d9764dfd0c57cb071c4177e52b&amp;aksessionid=11e67705d8d57e68" type="video/mp4">
+                        <source src="media/Cortex-SD.mp4" type="video/mp4">-->
+                      <!--</video>
+                    </div>-->
+                    <div id="placeholder" class="sprite"></div>
+                    <div id="cortex" class="sprite"></div>
+                    <div id="hippocampus" class="sprite"></div>
                   </div>
-                </div><!-- END CORTEX DESCRIPTION -->
+                </div>
 
-                <!-- HIPPOCAMPUS DESCRIPTION -->
-                <div id="hippocampus-description">
-                  <div class="pure-g">
-
-                    <div class="pure-u-1">
-                      <p class="menu-title">Hippocampus</p>
-                      <p>Mouse senses various lorem ipsum</p>
-                    </div>
-
-                    <div class="pure-u-1-6">
-                      <div class="pure-g">
-
-                        <div class="pure-u-1 video-btn-container">
-                          <a id="hippocampus-vid">
-                            <img src="img/video_placeholder.jpg">
-                            <div class="video-label">Video 1</div>
-                          </a>
-                        </div>
-                        <div class="pure-u-1 video-btn-container">
-                          <a id="hippocampus-drug-vid">
-                            <img src="img/video_placeholder.jpg">
-                            <div class="video-label">Video 2</div>
-                          </a>
-                        </div>
-                        <div class="pure-u-1 video-btn-container">
-                          <a id="hippocampus-behavior-vid">
-                            <img src="img/video_placeholder.jpg">
-                            <div class="video-label">Video 3</div>
-                          </a>
-                        </div>
-
-                      </div>
-                    </div>
-
-                    <div class="pure-u-1-24"></div>
-
+                <div class="pure-u-1">
+                  <div class="container" align="center">
+                    <div id="details-btn" align="center">View Details</div>
                   </div>
-                </div><!-- END HIPPOCAMPUS DESCRIPTION -->
+                </div>
 
               </div>
             </div>
-
-            <div class="pure-u-1-12"></div>
-
           </div>
-        </div><!-- BRAIN INFO OVERLAY END -->
 
-        <!-- PLACEHOLDER OVERLAY BEGIN-->
-        <div id="placeholder-overlay" class="pure-u-18-24">
+          <div class="pure-u-1-12"></div>
 
-        </div><!-- PLACEHOLDER OVERLAY END -->
+          <div class="pure-u-1">
+            <div class="brain-description">
 
-      </div>
+              <!-- CORTEX DESCRIPTION -->
+              <div id="cortex-description">
+                <p>
+                  <strong class="menu-title">Cortex</strong>
+                  <br>
+                  <a id="cortex-vid">
+                    <img src="img/video_placeholder_75x42.jpg">
+                  </a>
+                  <br>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                  magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comm
+                  odo consequat. Duis aute irure dolor in reprehenderit in
+                </p>
+              </div><!-- END CORTEX DESCRIPTION -->
+
+              <!-- HIPPOCAMPUS DESCRIPTION -->
+              <div id="hippocampus-description">
+                <p>
+                  <strong class="menu-title">Hippocampus</strong>
+                  <br>
+                  <a id="hippocampus-vid">
+                    <img src="img/video_placeholder_75x42.jpg">
+                  </a>
+                  <a id="hippocampus-drug-vid">
+                    <img src="img/video_placeholder_75x42.jpg">
+                  </a>
+                  <a id="hippocampus-behavior-vid">
+                    <img src="img/video_placeholder_75x42.jpg">
+                  </a>
+                  <br>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                  magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comm
+                  odo consequat. Duis aute irure dolor in reprehenderit in
+                </p>
+              </div><!-- END HIPPOCAMPUS DESCRIPTION -->
+
+            </div>
+          </div>
+
+        </div>
+      </div><!-- BRAIN END -->
 
     </div><!-- END GRID -->
   </div><!-- END CONTENT-CONTAINER -->
 
   <!-- flowplayer overlay -->
-  <!--<div id="overlay">
+  <div id="overlay">
     <a class="close" title="close"></a>
     <div id="overlay-player">
       <video>
@@ -266,7 +166,7 @@
         <source type="video/flash"           src="mp4:night1">
       </video>
     </div>
-  </div>-->
+  </div>
 
     <!--<div class="container">
       <div class="video-container">
