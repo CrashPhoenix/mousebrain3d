@@ -88,9 +88,9 @@ ul li {
 
 /* BRAIN SPRITES */
 #brain {
+  position: absolute;
   height: 100%;
   background: #DBDADA;
-  z-index: -1;
 }
 
 .sprite {
@@ -108,4 +108,12 @@ ul li {
 
 #hippocampus {
   background: url('../spritesheets/640x480/hippocampus.png');
+}
+
+
+/* BRAIN INFO OVERLAY */
+#brain-info-overlay {
+  position: absolute;
+  height: 100%;
+  background: #B0B0B0;
 }
