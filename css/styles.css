@@ -109,10 +109,15 @@ div.video-label {
   width: 100%;
   text-align: center;
   padding: 4px;
+  color: #FFF;
 }
 
 .video {
   width: 100%;
+  height: 100%;
+}
+
+.carousel {
   border: 3px solid #F06622;
 }
 
