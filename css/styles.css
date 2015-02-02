@@ -121,6 +121,13 @@ div.video-label {
   border: 3px solid #F06622;
 }
 
+div.carousel-description {
+  color: #FFF;
+  -webkit-column-count: 2; /* Chrome, Safari, Opera */
+  -moz-column-count: 2; /* Firefox */
+  column-count: 2;
+}
+
 
 /* PLACEHOLDER OVERLAY */
 #placeholder-overlay {

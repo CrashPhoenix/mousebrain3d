@@ -37,6 +37,11 @@ window.onload = function() {
 
   $('#details-btn').on('click', showInfo);
 
+  /*
+  ==============================================
+  Menu Controls
+  ==============================================
+  */
   /***********************
    *
    *  CORTEX BUTTON
@@ -113,4 +118,23 @@ window.onload = function() {
       turnOnClick('#hippocampus-btn');
     });
   });
+
+
+
+  /*
+  ==============================================
+  Video Controls
+  ==============================================
+  */
+  /***********************
+   *
+   *  CORTEX VIDEOS
+   *
+   ***********************/
+   $('#cortex-vid').click(function() {
+     $('#cortex-vid')[0].play();
+   });
+   $('#cortex-vid-btn').click(function() {
+     $('#cortex-vid')[0].play();
+   });
 }
