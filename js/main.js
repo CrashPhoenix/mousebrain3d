@@ -137,4 +137,30 @@ window.onload = function() {
    $('#cortex-vid-btn').click(function() {
      $('#cortex-vid')[0].play();
    });
+
+  /***********************
+   *
+   *  HIPPOCAMPUS VIDEOS
+   *
+   ***********************/
+   $('#hippocampus-vid').click(function() {
+    $('#hippocampus-vid')[0].play();
+   });
+   $('#hippocampus-vid-btn').click(function() {
+    $('#hippocampus-vid')[0].play();
+   });
+
+  $('#hippocampus-drug-vid').click(function() {
+    $('#hippocampus-drug-vid')[0].play();
+   });
+   $('#hippocampus-drug-vid-btn').click(function() {
+    $('#hippocampus-drug-vid')[0].play();
+   });
+
+  $('#hippocampus-behavior-vid').click(function() {
+    $('#hippocampus-behavior-vid')[0].play();
+   });
+   $('#hippocampus-behavior-vid-btn').click(function() {
+    $('#hippocampus-behavior-vid')[0].play();
+   });
 }
