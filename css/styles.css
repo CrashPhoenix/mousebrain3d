@@ -99,14 +99,30 @@ div.video-btn-container {
   position: relative;
 }
 
-div.video-btn-container img {
+div.video-btn-container > div {
+  text-align: center;
+  background-color: #FFF;
+  color: #F06622;
+  width: 100%;
+  padding-top: 20%;
+  padding-bottom: 20%;
+  border-radius: 5px;
+}
+
+div.video-btn-container > div.active,
+div.video-btn-container > div:hover {
+  background-color: #F06622;
+  color: #FFF;
+}
+
+/*div.video-btn-container img {
   max-width: 100%;
   border: 2px solid #fff;
 }
 
 div.video-btn-container:hover img {
   border: 2px solid #F06622;
-}
+}*/
 
 div.video-label {
   position: absolute;

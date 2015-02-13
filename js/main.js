@@ -133,9 +133,11 @@ window.onload = function() {
    ***********************/
    $('#cortex-vid').click(function() {
      $('#cortex-vid')[0].play();
+     $('#cortex-vid-btn').addClass('active');
    });
    $('#cortex-vid-btn').click(function() {
      $('#cortex-vid')[0].play();
+     $('#cortex-vid-btn').addClass('active');
    });
 
   /***********************
