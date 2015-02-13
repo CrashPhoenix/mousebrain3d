@@ -44,10 +44,15 @@ ul {
 
 ul li {
   padding: 0;
+  margin-bottom: 2px;
 }
 
 .menu {
   background-color: inherit;
+}
+
+.menu-item img {
+  max-width: 100%;
 }
 
 .menu-item:hover,
@@ -55,7 +60,7 @@ ul li {
 .menu-item.active,
 .menu-item.active .menu-title {
   color: #fff;
-  background-color: #F0F0F0;
+  /*background-color: #F0F0F0;*/
 }
 
 .menu-header {
@@ -112,6 +117,11 @@ div.video-label {
   color: #FFF;
 }
 
+.video-title {
+  text-align: center;
+  margin: 0;
+}
+
 .video {
   width: 100%;
   height: 100%;
@@ -126,12 +136,12 @@ a.carousel-control {
 }
 
 div.carousel-description {
-  color: #000000;
-  -webkit-column-count: 2; /* Chrome, Safari, Opera */
-  -moz-column-count: 2; /* Firefox */
-  column-count: 2;
+  font-size: 0.9em;
 }
 
+.description-header {
+  margin: 0;
+}
 
 /* PLACEHOLDER OVERLAY */
 #placeholder-overlay {
@@ -168,7 +178,7 @@ div.carousel-description {
 
 /* BRAIN INFO OVERLAY */
 #brain-info-overlay {
-  padding: 2em;
+  padding: 2em 2em 2em 0;
   position: absolute;
   height: 100%;
   background: #F0F0F0/*#B0B0B0*/;
