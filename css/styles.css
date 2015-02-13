@@ -6,7 +6,7 @@ body {
 }
 
 div.content.container {
-  padding: 1em 0 0 5em;
+  padding: 1em 0 0 2em;
   height: 100%;
 }
 
@@ -27,7 +27,7 @@ div.brain-container {
 }
 
 div.brain-description {
-  color: #FFFFFF;
+  color: #000000;
   font-size: 1em;
 }
 
@@ -55,7 +55,7 @@ ul li {
 .menu-item.active,
 .menu-item.active .menu-title {
   color: #fff;
-  background-color: #DBDADA;
+  background-color: #F0F0F0;
 }
 
 .menu-header {
@@ -117,12 +117,16 @@ div.video-label {
   height: 100%;
 }
 
-.carousel {
+video {
   border: 3px solid #F06622;
 }
 
+a.carousel-control {
+  height: 98%;
+}
+
 div.carousel-description {
-  color: #FFF;
+  color: #000000;
   -webkit-column-count: 2; /* Chrome, Safari, Opera */
   -moz-column-count: 2; /* Firefox */
   column-count: 2;
@@ -141,7 +145,7 @@ div.carousel-description {
 #brain {
   position: absolute;
   height: 100%;
-  background: #DBDADA;
+  background: #F0F0F0;
 }
 
 .sprite {
@@ -167,7 +171,7 @@ div.carousel-description {
   padding: 2em;
   position: absolute;
   height: 100%;
-  background: #B0B0B0;
+  background: #F0F0F0/*#B0B0B0*/;
 }
 
 /* ANIMATIONS */
