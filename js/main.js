@@ -22,7 +22,19 @@ window.onload = function() {
   var striatum = $('#striatum');
   var hypothalamus = $('#hypothalamus');
 
-  //var sections = [placeholder, cortex, hippocampus, striatum, hypothalamus];
+  var cortexButton = $('#cortex-btn');
+  var hippocampusButton = $('#hippocampus-btn');
+  var striatumButton = $('#striatum-btn');
+  var hypothalamusButton = $('#hypothalamus-btn');
+
+  var cortexDescription = $('#cortex-description');
+  var hippocampusDescription = $('#hippocampus-description');
+  var striatumDescription = $('#striatum-description');
+  var hypothalamusDescription = $('#hypothalamus-description');
+
+  var sections = [placeholder, cortex, hippocampus, striatum, hypothalamus];
+  var buttons = [cortexButton, hippocampusButton, striatumButton, hypothalamusButton];
+  var descriptions = [cortexDescription, hippocampusDescription, striatumDescription, hypothalamusDescription];
 
   //var element = document.querySelector('#sprite');
 
