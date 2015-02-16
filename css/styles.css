@@ -55,10 +55,21 @@ ul li {
   max-width: 100%;
 }
 
-.menu-item:hover,
-.menu-item:hover .menu-title,
-.menu-item.active,
-.menu-item.active .menu-title {
+.menu-item > .button {
+  display: initial;
+}
+
+.menu-item > .active {
+  display: none;
+}
+.menu-item:hover > .button,
+.menu-item.active > .button {
+ display: none;
+}
+
+.menu-item:hover > .active,
+.menu-item.active > .active {
+  display: initial;
   color: #fff;
   /*background-color: #F0F0F0;*/
 }
