@@ -185,6 +185,51 @@ window.onload = function() {
   });
 
 
+  /***********************
+   *
+   *  HYPOTHALAMUS BUTTON
+   *
+   ***********************/
+  $('#hypothalamus-btn').click(function() {
+    // Hide placeholder
+    $('#placeholder-overlay').fadeOut();
+
+    // Hide info overlay
+    contractInfo();
+
+    // Check here if clicked already and return if so
+    if($('#hypothalamus-btn').data('clicked') == 'yes') return;
+    turnOffClick('#hypothalamus-btn');
+
+    // Turn off other sections
+    placeholder.hide();
+    cortex.hide();
+    $('#cortex-btn').removeClass('active');
+    $('#cortex-description').hide();
+    hippocampus.hide();
+    $('#hippocampus-btn').removeClass('active');
+    $('#hippocampus-description').hide();
+    striatum.hide();
+    $('#striatum-btn').removeClass('active');
+    $('#striatum-description').hide();
+
+    // Turn on this section
+    $(this).addClass('active');
+    hypothalamus.show();
+    $('#hypothalamus-description').fadeIn();
+
+    var sprite = new Motio(hypothalamus[0], {
+      fps: 20,
+      frames: 31
+    });
+    /*sprite.toStart(true);*/
+    sprite.play();
+    sprite.toEnd(false, function() {
+      turnOnClick('#hypothalamus-btn');
+    });
+  });
+
+
 
   /*
   ==============================================
@@ -243,5 +288,19 @@ window.onload = function() {
    $('#striatum-vid-btn').click(function() {
      $('#striatum-vid')[0].play();
      $('#striatum-vid-btn').addClass('active');
+   });
+
+  /***********************
+   *
+   *  HYPOTHALAMUS VIDEOS
+   *
+   ***********************/
+   $('#hypothalamus-vid').click(function() {
+     $('#hypothalamus-vid')[0].play();
+     $('#hypothalamus-vid-btn').addClass('active');
+   });
+   $('#hypothalamus-vid-btn').click(function() {
+     $('#hypothalamus-vid')[0].play();
+     $('#hypothalamus-vid-btn').addClass('active');
    });
 }
