@@ -44,7 +44,7 @@ ul {
 
 ul li {
   padding: 0;
-  margin-bottom: 2px;
+  margin-bottom: 10px;
 }
 
 .menu {
@@ -191,6 +191,13 @@ div.carousel-description {
   background: url('../spritesheets/640x480/hippocampus.png');
 }
 
+#striatum {
+  background: url('../spritesheets/640x480/striatum.png');
+}
+
+#hypothalamus {
+  background: url('../spritesheets/640x480/hypothalamus.png');
+}
 
 /* BRAIN INFO OVERLAY */
 #brain-info-overlay {

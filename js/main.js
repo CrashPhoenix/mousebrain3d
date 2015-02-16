@@ -3,6 +3,10 @@
   $('#cortex-description').hide();
   $('#hippocampus').hide();
   $('#hippocampus-description').hide();
+  $('#striatum').hide();
+  $('#striatum-description').hide();
+  $('#hypothalamus').hide();
+  $('#hypothalamus-description').hide();
 })();
 
 window.onload = function() {
@@ -15,6 +19,10 @@ window.onload = function() {
   var placeholder = $('#placeholder');
   var cortex = $('#cortex');
   var hippocampus = $('#hippocampus');
+  var striatum = $('#striatum');
+  var hypothalamus = $('#hypothalamus');
+
+  //var sections = [placeholder, cortex, hippocampus, striatum, hypothalamus];
 
   //var element = document.querySelector('#sprite');
 
@@ -55,14 +63,20 @@ window.onload = function() {
     contractInfo();
 
     // Check here if clicked already and return if so
-    if($('#cortex-btn').data('clicked') == 'yes')return;
+    if($('#cortex-btn').data('clicked') == 'yes') return;
     turnOffClick('#cortex-btn');
 
     // Turn off other sections
-    placeholder.hide()
-    hippocampus.hide()
+    placeholder.hide();
+    hippocampus.hide();
     $('#hippocampus-btn').removeClass('active');
     $('#hippocampus-description').hide();
+    striatum.hide();
+    $('#striatum-btn').removeClass('active');
+    $('#striatum-description').hide();
+    hypothalamus.hide();
+    $('#hypothalamus-btn').removeClass('active');
+    $('#hypothalamus-description').hide();
 
     // Turn on this section
     $(this).addClass('active');
@@ -94,14 +108,20 @@ window.onload = function() {
     contractInfo();
 
     // Check here if clicked already and return if so
-    if($('#hippocampus-btn').data('clicked') == 'yes')return;
+    if($('#hippocampus-btn').data('clicked') == 'yes') return;
     turnOffClick('#hippocampus-btn');
 
     // Turn off other sections
-    placeholder.hide()
-    cortex.hide()
+    placeholder.hide();
+    cortex.hide();
     $('#cortex-btn').removeClass('active');
     $('#cortex-description').hide();
+    striatum.hide();
+    $('#striatum-btn').removeClass('active');
+    $('#striatum-description').hide();
+    hypothalamus.hide();
+    $('#hypothalamus-btn').removeClass('active');
+    $('#hypothalamus-description').hide();
 
     // Turn on this section
     $(this).addClass('active');
@@ -116,6 +136,51 @@ window.onload = function() {
     sprite.play();
     sprite.toEnd(false, function() {
       turnOnClick('#hippocampus-btn');
+    });
+  });
+
+
+  /***********************
+   *
+   *  STRIATUM BUTTON
+   *
+   ***********************/
+  $('#striatum-btn').click(function() {
+    // Hide placeholder
+    $('#placeholder-overlay').fadeOut();
+
+    // Hide info overlay
+    contractInfo();
+
+    // Check here if clicked already and return if so
+    if($('#striatum-btn').data('clicked') == 'yes') return;
+    turnOffClick('#striatum-btn');
+
+    // Turn off other sections
+    placeholder.hide();
+    cortex.hide();
+    $('#cortex-btn').removeClass('active');
+    $('#cortex-description').hide();
+    hippocampus.hide();
+    $('#hippocampus-btn').removeClass('active');
+    $('#hippocampus-description').hide();
+    hypothalamus.hide();
+    $('#hypothalamus-btn').removeClass('active');
+    $('#hypothalamus-description').hide();
+
+    // Turn on this section
+    $(this).addClass('active');
+    striatum.show();
+    $('#striatum-description').fadeIn();
+
+    var sprite = new Motio(striatum[0], {
+      fps: 20,
+      frames: 31
+    });
+    /*sprite.toStart(true);*/
+    sprite.play();
+    sprite.toEnd(false, function() {
+      turnOnClick('#striatum-btn');
     });
   });
 
@@ -164,5 +229,19 @@ window.onload = function() {
    });
    $('#hippocampus-behavior-vid-btn').click(function() {
     $('#hippocampus-behavior-vid')[0].play();
+   });
+
+   /***********************
+   *
+   *  STRIATUM VIDEOS
+   *
+   ***********************/
+   $('#striatum-vid').click(function() {
+     $('#striatum-vid')[0].play();
+     $('#striatum-vid-btn').addClass('active');
+   });
+   $('#striatum-vid-btn').click(function() {
+     $('#striatum-vid')[0].play();
+     $('#striatum-vid-btn').addClass('active');
    });
 }
