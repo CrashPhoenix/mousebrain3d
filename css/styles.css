@@ -14,6 +14,21 @@ div.content.container > .pure-g {
   height: 100%;
 }
 
+div.social-btn {
+  background-size: 100% 100%;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+}
+
+#facebook-btn {
+  background-image: url('../img/facebook-btn.png');
+}
+
+#twitter-btn {
+  background-image: url('../img/twitter-btn.png');
+}
+
 div.main-header {
   color: #A1CE64;
 }
@@ -44,7 +59,7 @@ ul {
 
 ul li {
   padding: 0;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .menu {
@@ -164,6 +179,8 @@ a.carousel-control {
 
 div.carousel-description {
   font-size: 0.9em;
+  max-height: 250px;
+  overflow: auto;
 }
 
 .description-header {
@@ -174,7 +191,11 @@ div.carousel-description {
 #placeholder-overlay {
   position: absolute;
   height: 100%;
-  background: #FFFFFF;
+  background-color: #FFF;
+  background-image: url('../img/mouse_cover.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
 }
 
 
