@@ -107,20 +107,6 @@ ul li {
   margin-top: 5px;
 }
 
-a#details-btn {
-  text-decoration: none;
-}
-
-#details-btn > div {
-  width: 130px;
-  /*height: 35px;*/
-  padding: 10px;
-  font-size: 1.125em;
-  color: #fff;
-  background-color: #F06622;
-  border-radius: 5px;
-}
-
 div.video-btn-container {
   position: relative;
 }

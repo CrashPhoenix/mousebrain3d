@@ -55,8 +55,6 @@ window.onload = function() {
     $('#brain-info-overlay').removeClass('stretchRight');
   }
 
-  $('#details-btn').on('click', showInfo);
-
   /*
   ==============================================
   Menu Controls
@@ -103,6 +101,7 @@ window.onload = function() {
     sprite.play();
     sprite.toEnd(false, function() {
       turnOnClick('#cortex-btn');
+      showInfo();
     });
   });
 
@@ -148,6 +147,7 @@ window.onload = function() {
     sprite.play();
     sprite.toEnd(false, function() {
       turnOnClick('#hippocampus-btn');
+      showInfo();
     });
   });
 
@@ -193,6 +193,7 @@ window.onload = function() {
     sprite.play();
     sprite.toEnd(false, function() {
       turnOnClick('#striatum-btn');
+      showInfo();
     });
   });
 
@@ -238,6 +239,7 @@ window.onload = function() {
     sprite.play();
     sprite.toEnd(false, function() {
       turnOnClick('#hypothalamus-btn');
+      showInfo();
     });
   });
 
