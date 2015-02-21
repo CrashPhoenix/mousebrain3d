@@ -101,7 +101,7 @@ window.onload = function() {
     sprite.play();
     sprite.toEnd(false, function() {
       turnOnClick('#cortex-btn');
-      showInfo();
+      setTimeout(showInfo, 1000);
     });
   });
 
@@ -147,7 +147,7 @@ window.onload = function() {
     sprite.play();
     sprite.toEnd(false, function() {
       turnOnClick('#hippocampus-btn');
-      showInfo();
+      setTimeout(showInfo, 1000);
     });
   });
 
@@ -193,7 +193,7 @@ window.onload = function() {
     sprite.play();
     sprite.toEnd(false, function() {
       turnOnClick('#striatum-btn');
-      showInfo();
+      setTimeout(showInfo, 1000);
     });
   });
 
@@ -239,7 +239,7 @@ window.onload = function() {
     sprite.play();
     sprite.toEnd(false, function() {
       turnOnClick('#hypothalamus-btn');
-      showInfo();
+      setTimeout(showInfo, 1000);
     });
   });
 
