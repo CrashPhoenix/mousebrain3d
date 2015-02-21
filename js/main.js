@@ -250,6 +250,12 @@ window.onload = function() {
   Video Controls
   ==============================================
   */
+  $('.carousel-caption').click(function() {
+    $(this.dataset.video)[0].play();
+    $('.video-btn').removeClass('active');
+    $(this.dataset.videoButton).addClass('active');
+    $(this.parentElement.parentElement.parentElement).carousel('pause');
+  });
   /***********************
    *
    *  CORTEX VIDEOS
@@ -257,10 +263,14 @@ window.onload = function() {
    ***********************/
    $('#cortex-vid').click(function() {
      $('#cortex-vid')[0].play();
+     $('#cortex-carousel').carousel('pause');
+     $('.video-btn').removeClass('active');
      $('#cortex-vid-btn').addClass('active');
    });
    $('#cortex-vid-btn').click(function() {
      $('#cortex-vid')[0].play();
+     $('#cortex-carousel').carousel('pause');
+     $('.video-btn').removeClass('active');
      $('#cortex-vid-btn').addClass('active');
    });
 
@@ -271,23 +281,41 @@ window.onload = function() {
    ***********************/
    $('#hippocampus-vid').click(function() {
     $('#hippocampus-vid')[0].play();
+    $('#hippocampus-carousel').carousel('pause');
+    $('.video-btn').removeClass('active');
+    $('#hippocampus-vid-btn').addClass('active');
    });
    $('#hippocampus-vid-btn').click(function() {
     $('#hippocampus-vid')[0].play();
+    $('#hippocampus-carousel').carousel('pause');
+    $('.video-btn').removeClass('active');
+    $('#hippocampus-vid-btn').addClass('active');
    });
 
   $('#hippocampus-drug-vid').click(function() {
     $('#hippocampus-drug-vid')[0].play();
+    $('#hippocampus-carousel').carousel('pause');
+    $('.video-btn').removeClass('active');
+    $('#hippocampus-drug-vid-btn').addClass('active');
    });
    $('#hippocampus-drug-vid-btn').click(function() {
     $('#hippocampus-drug-vid')[0].play();
+    $('#hippocampus-carousel').carousel('pause');
+    $('.video-btn').removeClass('active');
+    $('#hippocampus-drug-vid-btn').addClass('active');
    });
 
   $('#hippocampus-behavior-vid').click(function() {
     $('#hippocampus-behavior-vid')[0].play();
+    $('#hippocampus-carousel').carousel('pause');
+    $('.video-btn').removeClass('active');
+    $('#hippocampus-behavior-vid-btn').addClass('active');
    });
    $('#hippocampus-behavior-vid-btn').click(function() {
     $('#hippocampus-behavior-vid')[0].play();
+    $('#hippocampus-carousel').carousel('pause');
+    $('.video-btn').removeClass('active');
+    $('#hippocampus-behavior-vid-btn').addClass('active');
    });
 
    /***********************
@@ -297,10 +325,14 @@ window.onload = function() {
    ***********************/
    $('#striatum-vid').click(function() {
      $('#striatum-vid')[0].play();
+     $('#striatum-carousel').carousel('pause');
+     $('.video-btn').removeClass('active');
      $('#striatum-vid-btn').addClass('active');
    });
    $('#striatum-vid-btn').click(function() {
      $('#striatum-vid')[0].play();
+     $('#striatum-carousel').carousel('pause');
+     $('.video-btn').removeClass('active');
      $('#striatum-vid-btn').addClass('active');
    });
 
@@ -311,10 +343,14 @@ window.onload = function() {
    ***********************/
    $('#hypothalamus-vid').click(function() {
      $('#hypothalamus-vid')[0].play();
+     $('#hypothalamus-carousel').carousel('pause');
+     $('.video-btn').removeClass('active');
      $('#hypothalamus-vid-btn').addClass('active');
    });
    $('#hypothalamus-vid-btn').click(function() {
      $('#hypothalamus-vid')[0].play();
+     $('#hypothalamus-carousel').carousel('pause');
+     $('.video-btn').removeClass('active');
      $('#hypothalamus-vid-btn').addClass('active');
    });
 }
