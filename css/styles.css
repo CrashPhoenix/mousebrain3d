@@ -22,11 +22,33 @@ div.social-btn {
 }
 
 #facebook-btn {
-  background-image: url('../img/facebook-btn.png');
+  background-image: url('../img/buttons/facebook-btn.png');
 }
 
 #twitter-btn {
-  background-image: url('../img/twitter-btn.png');
+  background-image: url('../img/buttons/twitter-btn.png');
+}
+
+div.section-tab {
+  width: 64px;
+  height: 60px;
+  display: inline-block;
+}
+
+#mouse-tab {
+  background-image: url('../img/buttons/mouse.png');
+}
+
+#mouse-tab.active {
+  background-image: url('../img/buttons/mouse-active.png');
+}
+
+#rat-tab {
+  background-image: url('../img/buttons/rat.png');
+}
+
+#rat-tab.active {
+  background-image: url('../img/buttons/rat-active.png');
 }
 
 div.main-header {
@@ -183,7 +205,6 @@ div.carousel-description {
   background-position: center;
   background-size: cover;
 }
-
 
 /* BRAIN SPRITES */
 #brain {
