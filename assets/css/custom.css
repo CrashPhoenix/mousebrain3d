@@ -26,6 +26,14 @@
   background: url('../spritesheets/640x480/hippocampus.png');
 }
 
+#striatum {
+  background: url('../spritesheets/640x480/striatum.png');
+}
+
+#hypothalamus {
+  background: url('../spritesheets/640x480/hypothalamus.png');
+}
+
 /*PLAYBACK CONTROLS*/
 #playback-controls > a {
   margin-left: 3px;
