@@ -210,11 +210,21 @@ div.carousel-caption {
 }
 
 /* PLACEHOLDER OVERLAY */
-#placeholder-overlay {
+#mouse-placeholder-overlay {
   position: absolute;
   height: 100%;
   background-color: #FFF;
   background-image: url('../img/mouse_cover.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#rat-placeholder-overlay {
+  position: absolute;
+  height: 100%;
+  background-color: #FFF;
+  background-image: url('../img/rat_cover.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
