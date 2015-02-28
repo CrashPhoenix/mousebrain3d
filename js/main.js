@@ -7,6 +7,7 @@
   $('#striatum-description').hide();
   $('#hypothalamus').hide();
   $('#hypothalamus-description').hide();
+  $('#rat-section').hide();
 })();
 
 window.onload = function() {
@@ -54,6 +55,22 @@ window.onload = function() {
     $('#brain-info-overlay').addClass('beforeAnimation');
     $('#brain-info-overlay').removeClass('stretchRight');
   }
+
+  /*
+  ==============================================
+  Tab Controls
+  ==============================================
+  */
+  $('.section-tab').click(function() {
+    $('.section-tab').each(function() {
+      $(this).removeClass('active');
+    });
+    $(this).addClass('active');
+    $('.section-content').each(function() {
+      $(this).fadeOut();
+    });
+    $(this.dataset.section).fadeIn();
+  });
 
   /*
   ==============================================
