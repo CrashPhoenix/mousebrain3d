@@ -1,8 +1,13 @@
+html {
+  height: 100%;
+}
+
 body {
   /*margin: 15px 25px 15px 15px;*/
   /*padding: 1em;*/
   background-color: #FFFFFF;
   color: #5D6061;
+  height: 100%;
 }
 
 div.content.container {

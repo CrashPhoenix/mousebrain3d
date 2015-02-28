@@ -1,0 +1,40 @@
+.video-description {
+  padding-bottom: 75px;
+}
+
+/* BRAIN SPRITES */
+#brain {
+  position: absolute;
+  height: 100%;
+  background: #DBDADA;
+}
+
+.sprite {
+  width: 642px;
+  height: 484px;
+}
+
+#placeholder {
+  background: url('../img/brain_placeholder_640x480.png');
+}
+
+#cortex {
+  background: url('../spritesheets/640x480/cortex.png');
+}
+
+#hippocampus {
+  background: url('../spritesheets/640x480/hippocampus.png');
+}
+
+#striatum {
+  background: url('../spritesheets/640x480/striatum.png');
+}
+
+#hypothalamus {
+  background: url('../spritesheets/640x480/hypothalamus.png');
+}
+
+/*PLAYBACK CONTROLS*/
+#playback-controls > a {
+  margin-left: 3px;
+}

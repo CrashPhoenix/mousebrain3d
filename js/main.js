@@ -62,12 +62,15 @@ window.onload = function() {
   ==============================================
   */
   $('.section-tab').click(function() {
+    $('.placeholder-overlay').each(function() {
+      $(this).show();
+    });
     $('.section-tab').each(function() {
       $(this).removeClass('active');
     });
     $(this).addClass('active');
     $('.section-content').each(function() {
-      $(this).fadeOut();
+      $(this).hide();
     });
     $(this.dataset.section).fadeIn();
   });
@@ -84,7 +87,9 @@ window.onload = function() {
    ***********************/
   $('#cortex-btn').click(function() {
     // Hide placeholder
-    $('#placeholder-overlay').fadeOut();
+    $('.placeholder-overlay').each(function() {
+      $(this).fadeOut();
+    });
 
     // Hide info overlay
     contractInfo();
@@ -130,7 +135,9 @@ window.onload = function() {
    ***********************/
   $('#hippocampus-btn').click(function() {
     // Hide placeholder
-    $('#placeholder-overlay').fadeOut();
+    $('.placeholder-overlay').each(function() {
+      $(this).fadeOut();
+    });
 
     // Hide info overlay
     contractInfo();
@@ -176,7 +183,9 @@ window.onload = function() {
    ***********************/
   $('#striatum-btn').click(function() {
     // Hide placeholder
-    $('#placeholder-overlay').fadeOut();
+    $('.placeholder-overlay').each(function() {
+      $(this).fadeOut();
+    });
 
     // Hide info overlay
     contractInfo();
@@ -222,7 +231,9 @@ window.onload = function() {
    ***********************/
   $('#hypothalamus-btn').click(function() {
     // Hide placeholder
-    $('#placeholder-overlay').fadeOut();
+    $('.placeholder-overlay').each(function() {
+      $(this).fadeOut();
+    });
 
     // Hide info overlay
     contractInfo();
