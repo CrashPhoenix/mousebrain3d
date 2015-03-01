@@ -64,7 +64,7 @@ div.main-header > p {
   color: #5D6061;
 }
 
-div.pure-g.section-content {
+div.pure-g.section-content-container {
   position: relative;
   width: 100%;
   height: 90%;
@@ -203,11 +203,11 @@ div.carousel-description {
   overflow: auto;
 }
 
-::-webkit-scrollbar {
+div.carousel-description::-webkit-scrollbar {
     -webkit-appearance: none;
-    width: 7px;
+    width: 5px;
 }
-::-webkit-scrollbar-thumb {
+div.carousel-description::-webkit-scrollbar-thumb {
     border-radius: 4px;
     background-color: rgba(0,0,0,.5);
     box-shadow: 0 0 1px rgba(255,255,255,.5);
