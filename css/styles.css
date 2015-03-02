@@ -257,10 +257,6 @@ div.carousel-caption {
   height: 484px;
 }
 
-#placeholder {
-  background: url('../img/brain_placeholder_640x480.png');
-}
-
 #cortex {
   background: url('../spritesheets/640x480/cortex.png');
 }
