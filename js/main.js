@@ -2,10 +2,9 @@ function hideAll () {
   $('.sprite').each(function() {
     $(this).hide();
   });
-  $('#cortex-description').hide();
-  $('#hippocampus-description').hide();
-  $('#striatum-description').hide();
-  $('#hypothalamus-description').hide();
+  $('.description-container').each(function() {
+    $(this).hide();
+  });
   console.log("hiding all!");
 }
 
@@ -58,7 +57,7 @@ window.onload = function() {
     $('.menu-btn').each(function() {
       $(this).removeClass('active');
     });
-    contractInfo();
+    //contractInfo();
     hideAll();
   });
 
@@ -71,7 +70,9 @@ window.onload = function() {
     var thisId = this.id;
     var thisBrainSection = this.dataset.brainSection;
     var thisSection = this.dataset.section;
+    var thisSectionDescriptionSelector = '#brain-info-overlay' + thisDataSection + ' #' + thisBrainSection + '-description';
     var thisSpriteSelector = '#' + thisSection + '-' + thisBrainSection;
+    var thisDataSection = '[data-section="' + thisSection + '"]';
 
     // Hide placeholder
     $('.placeholder-overlay').each(function() {
@@ -79,7 +80,8 @@ window.onload = function() {
     });
 
     // Hide info overlay
-    contractInfo();
+    $('#brain-info-overlay' + thisDataSection).addClass('beforeAnimation');
+    $('#brain-info-overlay' + thisDataSection).removeClass('stretchRight');
 
     // Check here if clicked already and return if so
     if($(this).data('clicked') == 'yes') return;
@@ -100,7 +102,7 @@ window.onload = function() {
     // Turn on this section
     $(this).addClass('active');
     $(thisSpriteSelector).show();
-    $('#' + thisBrainSection + '-description').fadeIn();
+    $(thisSectionSelector).fadeIn();
 
     var sprite = new Motio($(thisSpriteSelector)[0], {
       fps: 20,
@@ -110,7 +112,10 @@ window.onload = function() {
     sprite.play();
     sprite.toEnd(false, function() {
       turnOnClick('#' + thisId);
-      setTimeout(showInfo, 1000);
+      setTimeout(function() {
+        $('#brain-info-overlay' + thisDataSection).removeClass('beforeAnimation');
+        $('#brain-info-overlay' + thisDataSection).addClass('stretchRight');
+      }, 1000);
     });
   });
 
