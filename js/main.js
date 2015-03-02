@@ -1,11 +1,10 @@
 function hideAll () {
-  $('#cortex').hide();
+  $('.sprite').each(function() {
+    $(this).hide();
+  });
   $('#cortex-description').hide();
-  $('#hippocampus').hide();
   $('#hippocampus-description').hide();
-  $('#striatum').hide();
   $('#striatum-description').hide();
-  $('#hypothalamus').hide();
   $('#hypothalamus-description').hide();
   console.log("hiding all!");
 }
@@ -45,9 +44,6 @@ window.onload = function() {
   ==============================================
   */
   $('.section-tab').click(function() {
-    $('.placeholder-overlay').each(function() {
-      $(this).show();
-    });
     $('.section-tab').each(function() {
       $(this).removeClass('active');
     });
@@ -56,7 +52,11 @@ window.onload = function() {
       $(this).hide();
     });
     $(this.dataset.section).fadeIn();
-    //hideAll();
+    $('.placeholder-overlay').each(function() {
+      $(this).css('display', 'inline-block');
+    });
+    contractInfo();
+    hideAll();
   });
 
   /*
@@ -70,6 +70,11 @@ window.onload = function() {
    *
    ***********************/
   $('#cortex-btn').click(function() {
+    var thisId = this.id;
+    var thisBrainSection = this.dataset.brainSection;
+    var thisSection = this.dataset.section;
+    var thisSpriteSelector = '#' + thisSection + '-' + thisBrainSection;
+
     // Hide placeholder
     $('.placeholder-overlay').each(function() {
       $(this).fadeOut();
@@ -80,11 +85,20 @@ window.onload = function() {
 
     // Check here if clicked already and return if so
     if($(this).data('clicked') == 'yes') return;
-    turnOffClick(this);
+    turnOffClick('#' + thisId);
 
     // Turn off other sections
     placeholder.hide();
-    cortex.hide();
+    $('.sprite').each(function() {
+      $(this).hide();
+    });
+    $('.menu-btn').each(function() {
+      $(this).removeClass('active');
+    });
+    $('.description-container').each(function() {
+      $(this).hide();
+    });
+    /*cortex.hide();
     $('#cortex-btn').removeClass('active');
     $('#cortex-description').hide();
     hippocampus.hide();
@@ -95,21 +109,21 @@ window.onload = function() {
     $('#striatum-description').hide();
     hypothalamus.hide();
     $('#hypothalamus-btn').removeClass('active');
-    $('#hypothalamus-description').hide();
+    $('#hypothalamus-description').hide();*/
 
     // Turn on this section
     $(this).addClass('active');
-    cortex.show();
-    $('#cortex-description').fadeIn();
+    $(thisSpriteSelector).show();
+    $('#' + thisBrainSection + '-description').fadeIn();
 
-    var sprite = new Motio(cortex[0], {
+    var sprite = new Motio($(thisSpriteSelector)[0], {
       fps: 20,
       frames: 31
     });
 
     sprite.play();
     sprite.toEnd(false, function() {
-      turnOnClick(this);
+      turnOnClick('#' + thisId);
       setTimeout(showInfo, 1000);
     });
   });

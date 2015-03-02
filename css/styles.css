@@ -95,24 +95,24 @@ ul li {
   background-color: inherit;
 }
 
-.menu-item img {
+.menu-btn img {
   max-width: 100%;
 }
 
-.menu-item > .button {
+.menu-btn > .button {
   display: initial;
 }
 
-.menu-item > .active {
+.menu-btn > .active {
   display: none;
 }
-.menu-item:hover > .button,
-.menu-item.active > .button {
+.menu-btn:hover > .button,
+.menu-btn.active > .button {
  display: none;
 }
 
-.menu-item:hover > .active,
-.menu-item.active > .active {
+.menu-btn:hover > .active,
+.menu-btn.active > .active {
   display: initial;
   color: #fff;
   /*background-color: #F0F0F0;*/
@@ -226,6 +226,7 @@ div.carousel-caption {
 
 /* PLACEHOLDER OVERLAY */
 #mouse-placeholder-overlay {
+  display: inline-block;
   position: absolute;
   height: 100%;
   background-color: #FFF;
@@ -236,6 +237,7 @@ div.carousel-caption {
 }
 
 #rat-placeholder-overlay {
+  display: inline-block;
   position: absolute;
   height: 100%;
   background-color: #FFF;
@@ -245,7 +247,11 @@ div.carousel-caption {
   background-size: cover;
 }
 
-/* BRAIN SPRITES */
+/*
+==============================================
+BRAIN SPRITES
+==============================================
+*/
 #brain {
   position: absolute;
   height: 100%;
@@ -257,19 +263,37 @@ div.carousel-caption {
   height: 484px;
 }
 
-#cortex {
+/* MOUSE SPRITES */
+#mouse-cortex {
   background: url('../spritesheets/640x480/cortex.png');
 }
 
-#hippocampus {
+#mouse-hippocampus {
   background: url('../spritesheets/640x480/hippocampus.png');
 }
 
-#striatum {
+#mouse-striatum {
   background: url('../spritesheets/640x480/striatum.png');
 }
 
-#hypothalamus {
+#mouse-hypothalamus {
+  background: url('../spritesheets/640x480/hypothalamus.png');
+}
+
+/* RAT SPRITES */
+#rat-cortex {
+  background: url('../spritesheets/640x480/cortex.png');
+}
+
+#rat-hippocampus {
+  background: url('../spritesheets/640x480/hippocampus.png');
+}
+
+#rat-striatum {
+  background: url('../spritesheets/640x480/striatum.png');
+}
+
+#rat-hypothalamus {
   background: url('../spritesheets/640x480/hypothalamus.png');
 }
 
