@@ -55,6 +55,9 @@ window.onload = function() {
     $('.placeholder-overlay').each(function() {
       $(this).css('display', 'inline-block');
     });
+    $('.menu-btn').each(function() {
+      $(this).removeClass('active');
+    });
     contractInfo();
     hideAll();
   });
@@ -64,12 +67,7 @@ window.onload = function() {
   Menu Controls
   ==============================================
   */
-  /***********************
-   *
-   *  CORTEX BUTTON
-   *
-   ***********************/
-  $('#cortex-btn').click(function() {
+  $('.menu-btn').click(function() {
     var thisId = this.id;
     var thisBrainSection = this.dataset.brainSection;
     var thisSection = this.dataset.section;
@@ -98,18 +96,6 @@ window.onload = function() {
     $('.description-container').each(function() {
       $(this).hide();
     });
-    /*cortex.hide();
-    $('#cortex-btn').removeClass('active');
-    $('#cortex-description').hide();
-    hippocampus.hide();
-    $('#hippocampus-btn').removeClass('active');
-    $('#hippocampus-description').hide();
-    striatum.hide();
-    $('#striatum-btn').removeClass('active');
-    $('#striatum-description').hide();
-    hypothalamus.hide();
-    $('#hypothalamus-btn').removeClass('active');
-    $('#hypothalamus-description').hide();*/
 
     // Turn on this section
     $(this).addClass('active');
@@ -124,150 +110,6 @@ window.onload = function() {
     sprite.play();
     sprite.toEnd(false, function() {
       turnOnClick('#' + thisId);
-      setTimeout(showInfo, 1000);
-    });
-  });
-
-
-  /***********************
-   *
-   *  HIPPOCAMPUS BUTTON
-   *
-   ***********************/
-  $('#hippocampus-btn').click(function() {
-    // Hide placeholder
-    $('.placeholder-overlay').each(function() {
-      $(this).fadeOut();
-    });
-
-    // Hide info overlay
-    contractInfo();
-
-    // Check here if clicked already and return if so
-    if($('#hippocampus-btn').data('clicked') == 'yes') return;
-    turnOffClick('#hippocampus-btn');
-
-    // Turn off other sections
-    placeholder.hide();
-    cortex.hide();
-    $('#cortex-btn').removeClass('active');
-    $('#cortex-description').hide();
-    striatum.hide();
-    $('#striatum-btn').removeClass('active');
-    $('#striatum-description').hide();
-    hypothalamus.hide();
-    $('#hypothalamus-btn').removeClass('active');
-    $('#hypothalamus-description').hide();
-
-    // Turn on this section
-    $(this).addClass('active');
-    hippocampus.show();
-    $('#hippocampus-description').fadeIn();
-
-    var sprite = new Motio(hippocampus[0], {
-      fps: 20,
-      frames: 31
-    });
-    /*sprite.toStart(true);*/
-    sprite.play();
-    sprite.toEnd(false, function() {
-      turnOnClick('#hippocampus-btn');
-      setTimeout(showInfo, 1000);
-    });
-  });
-
-
-  /***********************
-   *
-   *  STRIATUM BUTTON
-   *
-   ***********************/
-  $('#striatum-btn').click(function() {
-    // Hide placeholder
-    $('.placeholder-overlay').each(function() {
-      $(this).fadeOut();
-    });
-
-    // Hide info overlay
-    contractInfo();
-
-    // Check here if clicked already and return if so
-    if($('#striatum-btn').data('clicked') == 'yes') return;
-    turnOffClick('#striatum-btn');
-
-    // Turn off other sections
-    placeholder.hide();
-    cortex.hide();
-    $('#cortex-btn').removeClass('active');
-    $('#cortex-description').hide();
-    hippocampus.hide();
-    $('#hippocampus-btn').removeClass('active');
-    $('#hippocampus-description').hide();
-    hypothalamus.hide();
-    $('#hypothalamus-btn').removeClass('active');
-    $('#hypothalamus-description').hide();
-
-    // Turn on this section
-    $(this).addClass('active');
-    striatum.show();
-    $('#striatum-description').fadeIn();
-
-    var sprite = new Motio(striatum[0], {
-      fps: 20,
-      frames: 31
-    });
-    /*sprite.toStart(true);*/
-    sprite.play();
-    sprite.toEnd(false, function() {
-      turnOnClick('#striatum-btn');
-      setTimeout(showInfo, 1000);
-    });
-  });
-
-
-  /***********************
-   *
-   *  HYPOTHALAMUS BUTTON
-   *
-   ***********************/
-  $('#hypothalamus-btn').click(function() {
-    // Hide placeholder
-    $('.placeholder-overlay').each(function() {
-      $(this).fadeOut();
-    });
-
-    // Hide info overlay
-    contractInfo();
-
-    // Check here if clicked already and return if so
-    if($('#hypothalamus-btn').data('clicked') == 'yes') return;
-    turnOffClick('#hypothalamus-btn');
-
-    // Turn off other sections
-    placeholder.hide();
-    cortex.hide();
-    $('#cortex-btn').removeClass('active');
-    $('#cortex-description').hide();
-    hippocampus.hide();
-    $('#hippocampus-btn').removeClass('active');
-    $('#hippocampus-description').hide();
-    striatum.hide();
-    $('#striatum-btn').removeClass('active');
-    $('#striatum-description').hide();
-
-    // Turn on this section
-    $(this).addClass('active');
-    hypothalamus.show();
-    $('#hypothalamus-description').fadeIn();
-
-    var sprite = new Motio(hypothalamus[0], {
-      fps: 20,
-      frames: 31
-    });
-    /*sprite.toStart(true);*/
-    sprite.play();
-    sprite.toEnd(false, function() {
-      turnOnClick('#hypothalamus-btn');
       setTimeout(showInfo, 1000);
     });
   });
