@@ -72,7 +72,7 @@ window.onload = function() {
     var thisSection = this.dataset.section;
     var thisSpriteSelector = '#' + thisSection + '-' + thisBrainSection;
     var thisDataSection = '[data-section="' + thisSection + '"]';
-     var thisSectionDescriptionSelector = '#brain-info-overlay'
+    var thisSectionDescriptionSelector = '#brain-info-overlay'
                                           + thisDataSection + ' #'
                                           + thisBrainSection + '-description';
 
@@ -157,43 +157,18 @@ window.onload = function() {
    *  HIPPOCAMPUS VIDEOS
    *
    ***********************/
-   $('#hippocampus-vid').click(function() {
-    $('#hippocampus-vid')[0].play();
-    $('#hippocampus-carousel').carousel('pause');
-    $('.video-btn').removeClass('active');
-    $('#hippocampus-vid-btn').addClass('active');
-   });
-   $('#hippocampus-vid-btn').click(function() {
-    $('#hippocampus-vid')[0].play();
-    $('#hippocampus-carousel').carousel('pause');
-    $('.video-btn').removeClass('active');
-    $('#hippocampus-vid-btn').addClass('active');
-   });
+   $('.video-btn').click(function() {
+     var thisVideoSelector = this.dataset.video;
+     $('.video-btn').each(function() {
+       $(this).removeClass('active');
+     });
+     $(this).addClass('active');
+     $(thisVideoSelector)[0].play();
 
-  $('#hippocampus-drug-vid').click(function() {
-    $('#hippocampus-drug-vid')[0].play();
-    $('#hippocampus-carousel').carousel('pause');
-    $('.video-btn').removeClass('active');
-    $('#hippocampus-drug-vid-btn').addClass('active');
-   });
-   $('#hippocampus-drug-vid-btn').click(function() {
-    $('#hippocampus-drug-vid')[0].play();
-    $('#hippocampus-carousel').carousel('pause');
-    $('.video-btn').removeClass('active');
-    $('#hippocampus-drug-vid-btn').addClass('active');
-   });
-
-  $('#hippocampus-behavior-vid').click(function() {
-    $('#hippocampus-behavior-vid')[0].play();
-    $('#hippocampus-carousel').carousel('pause');
-    $('.video-btn').removeClass('active');
-    $('#hippocampus-behavior-vid-btn').addClass('active');
-   });
-   $('#hippocampus-behavior-vid-btn').click(function() {
-    $('#hippocampus-behavior-vid')[0].play();
-    $('#hippocampus-carousel').carousel('pause');
-    $('.video-btn').removeClass('active');
-    $('#hippocampus-behavior-vid-btn').addClass('active');
+     // pause carousel
+     console.log(this.parentElement);
+     console.log(this.parentElement.dataset.target)
+     $(this.parentElement.dataset.target).carousel('pause');
    });
 
    /***********************
