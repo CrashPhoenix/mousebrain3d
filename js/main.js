@@ -166,8 +166,6 @@ window.onload = function() {
      $(thisVideoSelector)[0].play();
 
      // pause carousel
-     console.log(this.parentElement);
-     console.log(this.parentElement.dataset.target)
      $(this.parentElement.dataset.target).carousel('pause');
    });
 
