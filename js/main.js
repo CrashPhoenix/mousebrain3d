@@ -70,9 +70,11 @@ window.onload = function() {
     var thisId = this.id;
     var thisBrainSection = this.dataset.brainSection;
     var thisSection = this.dataset.section;
-    var thisSectionDescriptionSelector = '#brain-info-overlay' + thisDataSection + ' #' + thisBrainSection + '-description';
     var thisSpriteSelector = '#' + thisSection + '-' + thisBrainSection;
     var thisDataSection = '[data-section="' + thisSection + '"]';
+     var thisSectionDescriptionSelector = '#brain-info-overlay'
+                                          + thisDataSection + ' #'
+                                          + thisBrainSection + '-description';
 
     // Hide placeholder
     $('.placeholder-overlay').each(function() {
@@ -102,7 +104,7 @@ window.onload = function() {
     // Turn on this section
     $(this).addClass('active');
     $(thisSpriteSelector).show();
-    $(thisSectionSelector).fadeIn();
+    $(thisSectionDescriptionSelector).fadeIn();
 
     var sprite = new Motio($(thisSpriteSelector)[0], {
       fps: 20,
