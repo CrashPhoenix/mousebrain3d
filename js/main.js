@@ -121,8 +121,6 @@ window.onload = function() {
     });
   });
 
-
-
   /*
   ==============================================
   Video Controls
@@ -145,23 +143,5 @@ window.onload = function() {
 
      // pause carousel
      $(this.parentElement.dataset.target).carousel('pause');
-   });
-
-  /***********************
-   *
-   *  HYPOTHALAMUS VIDEOS
-   *
-   ***********************/
-   $('#hypothalamus-vid').click(function() {
-     $('#hypothalamus-vid')[0].play();
-     $('#hypothalamus-carousel').carousel('pause');
-     $('.video-btn').removeClass('active');
-     $('#hypothalamus-vid-btn').addClass('active');
-   });
-   $('#hypothalamus-vid-btn').click(function() {
-     $('#hypothalamus-vid')[0].play();
-     $('#hypothalamus-carousel').carousel('pause');
-     $('.video-btn').removeClass('active');
-     $('#hypothalamus-vid-btn').addClass('active');
    });
 }
