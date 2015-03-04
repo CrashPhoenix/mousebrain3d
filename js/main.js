@@ -126,13 +126,6 @@ window.onload = function() {
   Video Controls
   ==============================================
   */
-  $('.carousel-caption').click(function() {
-    $(this.dataset.video)[0].play();
-    $('.video-btn').removeClass('active');
-    $(this.dataset.videoButton).addClass('active');
-    $(this.parentElement.parentElement.parentElement).carousel('pause');
-  });
-
    $('.video-btn').click(function() {
      var thisVideoSelector = this.dataset.video;
      $('.video-btn').each(function() {
