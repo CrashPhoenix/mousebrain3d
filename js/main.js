@@ -134,29 +134,7 @@ window.onload = function() {
     $(this.dataset.videoButton).addClass('active');
     $(this.parentElement.parentElement.parentElement).carousel('pause');
   });
-  /***********************
-   *
-   *  CORTEX VIDEOS
-   *
-   ***********************/
-   $('#cortex-vid').click(function() {
-     $('#cortex-vid')[0].play();
-     $('#cortex-carousel').carousel('pause');
-     $('.video-btn').removeClass('active');
-     $('#cortex-vid-btn').addClass('active');
-   });
-   $('#cortex-vid-btn').click(function() {
-     $('#cortex-vid')[0].play();
-     $('#cortex-carousel').carousel('pause');
-     $('.video-btn').removeClass('active');
-     $('#cortex-vid-btn').addClass('active');
-   });
 
-  /***********************
-   *
-   *  HIPPOCAMPUS VIDEOS
-   *
-   ***********************/
    $('.video-btn').click(function() {
      var thisVideoSelector = this.dataset.video;
      $('.video-btn').each(function() {
@@ -167,24 +145,6 @@ window.onload = function() {
 
      // pause carousel
      $(this.parentElement.dataset.target).carousel('pause');
-   });
-
-   /***********************
-   *
-   *  STRIATUM VIDEOS
-   *
-   ***********************/
-   $('#striatum-vid').click(function() {
-     $('#striatum-vid')[0].play();
-     $('#striatum-carousel').carousel('pause');
-     $('.video-btn').removeClass('active');
-     $('#striatum-vid-btn').addClass('active');
-   });
-   $('#striatum-vid-btn').click(function() {
-     $('#striatum-vid')[0].play();
-     $('#striatum-carousel').carousel('pause');
-     $('.video-btn').removeClass('active');
-     $('#striatum-vid-btn').addClass('active');
    });
 
   /***********************
