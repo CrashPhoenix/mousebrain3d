@@ -1,17 +1,59 @@
+html {
+  height: 100%;
+}
+
 body {
   /*margin: 15px 25px 15px 15px;*/
   /*padding: 1em;*/
   background-color: #FFFFFF;
   color: #5D6061;
+  height: 100%;
 }
 
 div.content.container {
-  padding: 1em 0 0 5em;
+  padding: 1em 1em 1em 2em;
   height: 100%;
 }
 
 div.content.container > .pure-g {
   height: 100%;
+}
+
+div.social-btn {
+  background-size: 100% 100%;
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+}
+
+#facebook-btn {
+  background-image: url('../img/buttons/facebook-btn.png');
+}
+
+#twitter-btn {
+  background-image: url('../img/buttons/twitter-btn.png');
+}
+
+div.section-tab {
+  width: 64px;
+  height: 60px;
+  display: inline-block;
+}
+
+#mouse-tab {
+  background-image: url('../img/buttons/mouse.png');
+}
+
+#mouse-tab.active {
+  background-image: url('../img/buttons/mouse-active.png');
+}
+
+#rat-tab {
+  background-image: url('../img/buttons/rat.png');
+}
+
+#rat-tab.active {
+  background-image: url('../img/buttons/rat-active.png');
 }
 
 div.main-header {
@@ -22,12 +64,14 @@ div.main-header > p {
   color: #5D6061;
 }
 
-div.brain-container {
-
+div.pure-g.section-content-container {
+  position: relative;
+  width: 100%;
+  height: 90%;
 }
 
 div.brain-description {
-  color: #FFFFFF;
+  color: #000000;
   font-size: 1em;
 }
 
@@ -44,18 +88,34 @@ ul {
 
 ul li {
   padding: 0;
+  margin-bottom: 5px;
 }
 
 .menu {
   background-color: inherit;
 }
 
-.menu-item:hover,
-.menu-item:hover .menu-title,
-.menu-item.active,
-.menu-item.active .menu-title {
+.menu-btn img {
+  max-width: 100%;
+}
+
+.menu-btn > .button {
+  display: initial;
+}
+
+.menu-btn > .active {
+  display: none;
+}
+.menu-btn:hover > .button,
+.menu-btn.active > .button {
+ display: none;
+}
+
+.menu-btn:hover > .active,
+.menu-btn.active > .active {
+  display: initial;
   color: #fff;
-  background-color: #DBDADA;
+  /*background-color: #F0F0F0;*/
 }
 
 .menu-header {
@@ -76,32 +136,39 @@ ul li {
   margin-top: 5px;
 }
 
-a#details-btn {
-  text-decoration: none;
-}
-
-#details-btn > div {
-  width: 130px;
-  /*height: 35px;*/
-  padding: 10px;
-  font-size: 1.125em;
-  color: #fff;
-  background-color: #F06622;
-  border-radius: 5px;
-}
-
 div.video-btn-container {
   position: relative;
 }
 
-div.video-btn-container img {
+div.video-btn-container > div,
+div.video-btn-container > p {
+  max-width: 90%;
+}
+
+div.video-btn-container > div {
+  text-align: center;
+  background-color: #FFF;
+  color: #F06622;
+  width: 100%;
+  padding-top: 20%;
+  padding-bottom: 20%;
+  border-radius: 5px;
+}
+
+div.video-btn-container > div.active,
+div.video-btn-container > div:hover {
+  background-color: #F06622;
+  color: #FFF;
+}
+
+/*div.video-btn-container img {
   max-width: 100%;
   border: 2px solid #fff;
 }
 
 div.video-btn-container:hover img {
   border: 2px solid #F06622;
-}
+}*/
 
 div.video-label {
   position: absolute;
@@ -112,36 +179,83 @@ div.video-label {
   color: #FFF;
 }
 
+.video-title {
+  text-align: center;
+  margin: 5px;
+}
+
 .video {
   width: 100%;
   height: 100%;
 }
 
-.carousel {
-  border: 3px solid #F06622;
+video {
+  /*border: 3px solid #F06622;*/
+}
+
+a.carousel-control {
+  height: 98%;
 }
 
 div.carousel-description {
-  color: #FFF;
-  -webkit-column-count: 2; /* Chrome, Safari, Opera */
-  -moz-column-count: 2; /* Firefox */
-  column-count: 2;
+  font-size: 0.9em;
+  max-height: 250px;
+  overflow: auto;
 }
 
+div.carousel-description::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 5px;
+}
+div.carousel-description::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0,0,0,.5);
+    box-shadow: 0 0 1px rgba(255,255,255,.5);
+}
+
+div.carousel-caption {
+  background-image: url('../img/buttons/playbutton.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 80%;
+}
+
+.description-header {
+  margin: 0;
+}
 
 /* PLACEHOLDER OVERLAY */
-#placeholder-overlay {
+#mouse-placeholder-overlay {
+  display: inline-block;
   position: absolute;
   height: 100%;
-  background: #FFFFFF;
+  background-color: #FFF;
+  background-image: url('../img/mouse_cover.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
+#rat-placeholder-overlay {
+  display: inline-block;
+  position: absolute;
+  height: 100%;
+  background-color: #FFF;
+  background-image: url('../img/rat_cover.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 
-/* BRAIN SPRITES */
+/*
+==============================================
+BRAIN SPRITES
+==============================================
+*/
 #brain {
   position: absolute;
   height: 100%;
-  background: #DBDADA;
+  background: #F0F0F0;
 }
 
 .sprite {
@@ -149,25 +263,46 @@ div.carousel-description {
   height: 484px;
 }
 
-#placeholder {
-  background: url('../img/brain_placeholder_640x480.png');
-}
-
-#cortex {
+/* MOUSE SPRITES */
+#mouse-cortex {
   background: url('../spritesheets/640x480/cortex.png');
 }
 
-#hippocampus {
+#mouse-hippocampus {
   background: url('../spritesheets/640x480/hippocampus.png');
 }
 
+#mouse-striatum {
+  background: url('../spritesheets/640x480/striatum.png');
+}
+
+#mouse-hypothalamus {
+  background: url('../spritesheets/640x480/hypothalamus.png');
+}
+
+/* RAT SPRITES */
+#rat-cortex {
+  background: url('../spritesheets/640x480/cortex.png');
+}
+
+#rat-hippocampus {
+  background: url('../spritesheets/640x480/hippocampus.png');
+}
+
+#rat-striatum {
+  background: url('../spritesheets/640x480/striatum.png');
+}
+
+#rat-hypothalamus {
+  background: url('../spritesheets/640x480/hypothalamus.png');
+}
 
 /* BRAIN INFO OVERLAY */
 #brain-info-overlay {
-  padding: 2em;
+  padding: 2em 2em 2em 0;
   position: absolute;
   height: 100%;
-  background: #B0B0B0;
+  background: #F0F0F0/*#B0B0B0*/;
 }
 
 /* ANIMATIONS */
