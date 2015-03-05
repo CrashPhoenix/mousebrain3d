@@ -5,7 +5,6 @@ function hideAll () {
   $('.description-container').each(function() {
     $(this).hide();
   });
-  console.log("hiding all!");
 }
 
 (function(){
@@ -126,15 +125,25 @@ window.onload = function() {
   Video Controls
   ==============================================
   */
-   $('.video-btn').click(function() {
-     var thisVideoSelector = this.dataset.video;
-     $('.video-btn').each(function() {
-       $(this).removeClass('active');
-     });
-     $(this).addClass('active');
-     $(thisVideoSelector)[0].play();
+  $('.video-btn').click(function() {
+    var thisVideoSelector = this.dataset.video;
+    $('.video-btn').each(function() {
+      $(this).removeClass('active');
+    });
+    $(this).addClass('active');
+    $(thisVideoSelector)[0].play();
 
-     // pause carousel
-     $(this.parentElement.dataset.target).carousel('pause');
-   });
+    // pause carousel
+    $(this.parentElement.dataset.target).carousel('pause');
+  });
+
+  //$('#mouse-hippocampus-carousel .active').index()
+  $('.carousel').on('slid.bs.carousel', function() {
+    var activeCarouselItemSelector = '#' + this.id + ' .active'
+    var carouselItemSelector = '#' + this.id + ' .item'
+    //console.log(activeCarouselItemSelector);
+    //console.log(carouselItemSelector)
+    var currentIndex = $(activeCarouselItemSelector).index(/*carouselItemSelector*/);
+    console.log(this.id + ' slid to ' + currentIndex + '!');
+  });
 }
