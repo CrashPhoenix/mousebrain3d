@@ -5,7 +5,6 @@ function hideAll () {
   $('.description-container').each(function() {
     $(this).hide();
   });
-  console.log("hiding all!");
 }
 
 (function(){
@@ -126,22 +125,37 @@ window.onload = function() {
   Video Controls
   ==============================================
   */
-  $('.carousel-caption').click(function() {
-    $(this.dataset.video)[0].play();
-    $('.video-btn').removeClass('active');
-    $(this.dataset.videoButton).addClass('active');
-    $(this.parentElement.parentElement.parentElement).carousel('pause');
+  $('.video-btn').click(function() {
+    var thisVideoSelector = this.dataset.video;
+    $('.video-btn').each(function() {
+      $(this).removeClass('active');
+    });
+    $(this).addClass('active');
+    $(thisVideoSelector)[0].play();
+
+    // pause carousel
+    $(this.parentElement.dataset.target).carousel('pause');
   });
 
-   $('.video-btn').click(function() {
-     var thisVideoSelector = this.dataset.video;
-     $('.video-btn').each(function() {
-       $(this).removeClass('active');
-     });
-     $(this).addClass('active');
-     $(thisVideoSelector)[0].play();
-
-     // pause carousel
-     $(this.parentElement.dataset.target).carousel('pause');
-   });
+  //$('#mouse-hippocampus-carousel .active').index()
+  $('.carousel').on('slid.bs.carousel', function() {
+    var activeCarouselItemSelector = '#' + this.id + ' .active'
+    var carouselItemSelector = '#' + this.id + ' .item'
+    var dataTarget = '[data-target="#' + this.id + '"]';
+    //console.log(activeCarouselItemSelector);
+    //console.log(carouselItemSelector)
+    var currentIndex = $(activeCarouselItemSelector).index(/*carouselItemSelector*/);
+    var dataSlide = '[data-slide="' + currentIndex +'"]';
+    //console.log(this.id + ' slid to ' + currentIndex + '!');
+    $('.description-header' + dataTarget).each(function() {
+      $(this).hide();
+    });
+    $('.carousel-description' + dataTarget).each(function() {
+      $(this).hide();
+    });
+    var descriptionHeader = $('.description-header' + dataTarget + dataSlide);
+    descriptionHeader.fadeIn();
+    var carouselDescription = $('.carousel-description' + dataTarget + dataSlide);
+    carouselDescription.fadeIn();
+  });
 }
