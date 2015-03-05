@@ -141,9 +141,21 @@ window.onload = function() {
   $('.carousel').on('slid.bs.carousel', function() {
     var activeCarouselItemSelector = '#' + this.id + ' .active'
     var carouselItemSelector = '#' + this.id + ' .item'
+    var dataTarget = '[data-target="#' + this.id + '"]';
     //console.log(activeCarouselItemSelector);
     //console.log(carouselItemSelector)
     var currentIndex = $(activeCarouselItemSelector).index(/*carouselItemSelector*/);
-    console.log(this.id + ' slid to ' + currentIndex + '!');
+    var dataSlide = '[data-slide="' + currentIndex +'"]';
+    //console.log(this.id + ' slid to ' + currentIndex + '!');
+    $('.description-header' + dataTarget).each(function() {
+      $(this).hide();
+    });
+    $('.carousel-description' + dataTarget).each(function() {
+      $(this).hide();
+    });
+    var descriptionHeader = $('.description-header' + dataTarget + dataSlide);
+    descriptionHeader.fadeIn();
+    var carouselDescription = $('.carousel-description' + dataTarget + dataSlide);
+    carouselDescription.fadeIn();
   });
 }
