@@ -153,12 +153,21 @@ div.video-btn-container > div {
   padding-top: 20%;
   padding-bottom: 20%;
   border-radius: 5px;
+
+  background-image: url('../img/video_placeholder.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 55px;
 }
 
 div.video-btn-container > div.active,
 div.video-btn-container > div:hover {
   background-color: #F06622;
   color: #FFF;
+}
+
+div.video-btn-container > p {
+  display: none;
 }
 
 /*div.video-btn-container img {
