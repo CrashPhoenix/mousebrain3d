@@ -194,7 +194,8 @@ video {
 }
 
 a.carousel-control {
-  height: 98%;
+  height: 90%;
+  opacity: 0.0;
 }
 
 div.carousel-description {
