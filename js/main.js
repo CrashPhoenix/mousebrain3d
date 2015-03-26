@@ -158,4 +158,6 @@ window.onload = function() {
     var carouselDescription = $('.carousel-description' + dataTarget + dataSlide);
     carouselDescription.fadeIn();
   });
+
+  $('#cortex-btn').click();
 }
