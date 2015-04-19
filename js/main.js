@@ -5,6 +5,22 @@ function hideAll () {
   $('.description-container').each(function() {
     $(this).hide();
   });
+  $('.description-header').each(function() {
+    if ($(this).data('slide') != undefined) {
+      if ($(this).data('slide') != 0) {
+        console.log("hiding" + this.id + "!");
+        $(this).hide();
+      }
+    }
+  });
+  $('.carousel-description').each(function() {
+    if ($(this).data('slide') != undefined) {
+      if ($(this).data('slide') != 0) {
+        console.log("hiding" + this.id + "!");
+        $(this).hide();
+      }
+    }
+  });
 }
 
 (function(){
