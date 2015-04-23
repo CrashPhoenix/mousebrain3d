@@ -157,21 +157,21 @@ window.onload = function() {
   $('.carousel').on('slid.bs.carousel', function() {
     var activeCarouselItemSelector = '#' + this.id + ' .active'
     var carouselItemSelector = '#' + this.id + ' .item'
-    var dataTarget = '[data-target="#' + this.id + '"]';
+    var dataCarousel = '[data-carousel="#' + this.id + '"]';
     //console.log(activeCarouselItemSelector);
     //console.log(carouselItemSelector)
     var currentIndex = $(activeCarouselItemSelector).index(/*carouselItemSelector*/);
     var dataSlide = '[data-slide="' + currentIndex +'"]';
     //console.log(this.id + ' slid to ' + currentIndex + '!');
-    $('.description-header' + dataTarget).each(function() {
+    $('.description-header' + dataCarousel).each(function() {
       $(this).hide();
     });
-    $('.carousel-description' + dataTarget).each(function() {
+    $('.carousel-description' + dataCarousel).each(function() {
       $(this).hide();
     });
-    var descriptionHeader = $('.description-header' + dataTarget + dataSlide);
+    var descriptionHeader = $('.description-header' + dataCarousel + dataSlide);
     descriptionHeader.fadeIn();
-    var carouselDescription = $('.carousel-description' + dataTarget + dataSlide);
+    var carouselDescription = $('.carousel-description' + dataCarousel + dataSlide);
     carouselDescription.fadeIn();
   });
 

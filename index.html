@@ -101,7 +101,7 @@
                       <div class="pure-g">
 
                         <div class="pure-u-1">
-                          <p class="menu-title">Cortex Area</p>
+                          <p class="menu-title"></p>
                         </div>
 
                         <!-- Video Carousel -->
@@ -114,25 +114,25 @@
                                 <div class="carousel-inner" role="listbox">
                                   <div class="item active">
                                     <div class="video-container">
-                                      <video id="mouse-cortex-vid" class="video" name="media" controls>
-                                        <!--<source src="http://pdl.vimeocdn.com/01630/284/307140747.mp4?token2=1420700140_579748d9764dfd0c57cb071c4177e52b&amp;aksessionid=11e67705d8d57e68" type="video/mp4">-->
-                                        <!--<source src="media/Cortex-SD.mp4" type="video/mp4">-->
-                                        <source src="">
-                                      </video>
+                                      <iframe width="100%" height="315" src="http://www.youtube.com/embed/WC6E2cHj_kE" frameborder="0" allowfullscreen></iframe>
+                                    </div>
+                                  </div>
+                                  <div class="item">
+                                    <div class="video-container">
+                                      <iframe width="100%" height="315" src="http://www.youtube.com/embed/xewNonCLjsI" frameborder="0" allowfullscreen></iframe>
                                     </div>
                                   </div>
                                 </div>
 
-                                <!-- Add controls if multiple videos are available>
-                                <!-- Controls
-                                <a class="left carousel-control" href="#mouse-cortext-carousel" role="button" data-slide="prev">
+                                <!-- Controls -->
+                                <a class="left carousel-control" href="#mouse-cortex-carousel" role="button" data-slide="prev">
                                   <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
                                   <span class="sr-only">Previous</span>
                                 </a>
                                 <a class="right carousel-control" href="#mouse-cortex-carousel" role="button" data-slide="next">
                                   <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                                   <span class="sr-only">Next</span>
-                                </a> -->
+                                </a>
                               </div>
                             </div>
                             <!-- Video Buttons -->
@@ -140,8 +140,13 @@
                               <div class="pure-g">
 
                                 <div class="pure-u-1-6 video-btn-container" data-target="#mouse-cortex-carousel" data-slide-to="0">
-                                  <div class="video-btn" data-video="#mouse-cortex-vid"></div>
-                                  <p class="video-title">Cortex-SD</p>
+                                  <div class="video-btn" data-video="#mouse-cortex-vid" style="background-image: url('http://i.imgur.com/5kcWKSJ.png')"></div>
+                                  <p class="video-title">Inscopix Solutions: Multilayer Neocortical Imaging</p>
+                                </div>
+
+                                <div class="pure-u-1-6 video-btn-container" data-target="#mouse-cortex-carousel" data-slide-to="1">
+                                  <div class="video-btn" data-video="#mouse-cortex-drug-vid" style="background-image: url('http://i.imgur.com/WcuEAjd.png')"></div>
+                                  <p class="video-title">Neocortex (Somatasensory) Prism Probe</p>
                                 </div>
 
                               </div>
@@ -154,31 +159,22 @@
 
                         <!-- Description -->
                         <div class="pure-u-7-24">
-                          <h2 class="description-header">Title of Video 1 Display</h2>
-                          <div id="mouse-cortex-vid-description" class="carousel-description">
+                          <h2 class="description-header" data-carousel="#mouse-cortex-carousel" data-slide="0">
+                            Inscopix Solutions: Multilayer Neocortical Imaging
+                          </h2>
+                          <div id="mouse-cortex-vid-description" class="carousel-description" data-carousel="#mouse-cortex-carousel" data-slide="0">
                             <p>
-                              Fixie gluten-free selvage YOLO Odd Future
-                              health goth. Skateboard locavore cornhole
-                              fashion axe, Austin Vice four loko paleo
-                              plaid lomo. Lo-fi sustainable drinking
-                              vinegar American Apparel, listicle fashion
-                              axe cliche try-hard tattooed trust fund
-                              freegan.
-                              Four loko meditation VHS 3
-                              wolf
-                              moon put a bird on it. Chia asymmetrical
-                              dreamcatcher, literally irony selvage
-                              church-key k
-                              ale chips post-ir
-                              onic meh raw
-                              denim synth lumbersexual roof party.
-                              Skateboard food truck asymmetrical,
-                              bespoke cornhole actually vegan
-                              Bushwick American Apparel Intelligentsia
-                              Vice cliche kale chips. Vice aesthetic
-                              Portland put a bird on it DIY fixie, wolf jean
-                              shorts chia swag meh Tumblr quinoa
-                              Pitchfork gluten-free
+                              Our new implantable prism probes, custom designed for in vivo imaging with nVista, enable you to visualize Ca2+ activity in hundreds of neurons across multiple cortical layers in freely behaving rodents.<br><br>
+                                <a href="http://www.dropbox.com/s/g55n36wm3ne6ihi/Prism%20Probe%20Flyer.pdf?dl=0" target="_blank">View more information on our new Prism Probes</a><br><br>
+                                <a href="http://www.inscopix.com/store?qt-store=2#qt-store" target="_blank">View our web store for purchasing information</a>
+                            </p>
+                          </div>
+                          <h2 class="description-header" data-carousel="#mouse-cortex-carousel" data-slide="1">
+                            Neocortex (Somatasensory) Prism Probe 
+                          </h2>
+                          <div id="mouse-cortex-vid-description" class="carousel-description" data-carousel="#mouse-cortex-carousel" data-slide="1">
+                            <p>
+                              <b>Animal Model</b>: Mouse<br><b>Brain Area</b>: Neocortex (Somatasensory)<br><b>Indicator</b>: GCaMP6m<br><b>Notes</b>: 1.0mm diameter prism probe during exploration of novel textures in novel environment.<br>Inscopix Labs. 
                             </p>
                           </div>
                         </div><!-- END Description -->
@@ -191,7 +187,7 @@
                       <div class="pure-g">
 
                         <div class="pure-u-1">
-                          <p class="menu-title">Hippocampus</p>
+                          <p class="menu-title"></p>
                         </div>
 
                         <!-- Video Carousel -->
@@ -204,21 +200,12 @@
                                 <div class="carousel-inner" role="listbox">
                                   <div class="item active">
                                     <div class="video-container">
-                                      <video id="mouse-hippocampus-vid" class="video" name="media" controls>
-                                        <source src="media/hippocampus-SD.mp4" type="video/mp4">
-                                      </video>
+                                      <iframe width="100%" height="315" src="http://www.youtube.com/embed/4CmP4QHrpCQ" frameborder="0" allowfullscreen></iframe>
                                     </div>
                                   </div>
                                   <div class="item">
                                     <div class="video-container">
-                                      <iframe width="100%" height="315" src="https://www.youtube.com/embed/XQu8TTBmGhA" frameborder="0" allowfullscreen></iframe>
-                                    </div>
-                                  </div>
-                                  <div class="item">
-                                    <div class="video-container">
-                                      <video id="mouse-hippocampus-behavior-vid" class="video" name="media" controls>
-                                        <source src="media/Hippocampus_behavior.mp4" type="video/mp4">
-                                      </video>
+                                      <iframe width="100%" height="315" src="http://www.youtube.com/embed/LORIS9BVsjM" frameborder="0" allowfullscreen></iframe>
                                     </div>
                                   </div>
                                 </div>
@@ -239,18 +226,13 @@
                               <div class="pure-g">
 
                                 <div class="pure-u-1-6 video-btn-container" data-target="#mouse-hippocampus-carousel" data-slide-to="0">
-                                  <div class="video-btn" data-video="#mouse-hippocampus-vid" style="background-image: url('img/mouse_cover.png')"></div>
-                                  <p class="video-title">Hippocampus-SD</p>
+                                  <div class="video-btn" data-video="#mouse-hippocampus-vid" style="background-image: url('http://i.imgur.com/0c8ULwJ.png')"></div>
+                                  <p class="video-title">Linear Track</p>
                                 </div>
 
                                 <div class="pure-u-1-6 video-btn-container" data-target="#mouse-hippocampus-carousel" data-slide-to="1">
-                                  <div class="video-btn" data-video="#mouse-hippocampus-drug-vid"></div>
-                                  <p class="video-title">HippocampusDrug-SD</p>
-                                </div>
-
-                                <div class="pure-u-1-6 video-btn-container" data-target="#mouse-hippocampus-carousel" data-slide-to="2">
-                                  <div class="video-btn" data-video="#mouse-hippocampus-behavior-vid"></div>
-                                  <p class="video-title">HippocampusBehavior-SD</p>
+                                  <div class="video-btn" data-video="#mouse-hippocampus-drug-vid" style="background-image: url('http://i.imgur.com/xdPpOdn.png')"></div>
+                                  <p class="video-title">Dentate Gyrus</p>
                                 </div>
 
                               </div>
@@ -263,91 +245,20 @@
 
                         <!-- Description -->
                         <div class="pure-u-7-24">
-                          <h2 class="description-header" data-target="#mouse-hippocampus-carousel" data-slide="0">
-                            Title of  Display
+                          <h2 class="description-header" data-carousel="#mouse-hippocampus-carousel" data-slide="0">
+                            Linear Track
                           </h2>
-                          <div id="mouse-hippocampus-vid-description" class="carousel-description" data-target="#mouse-hippocampus-carousel" data-slide="0">
+                          <div id="mouse-hippocampus-vid-description" class="carousel-description" data-carousel="#mouse-hippocampus-carousel" data-slide="0">
                             <p>
-                              Fixie gluten-free selvage YOLO Odd Future
-                              health goth. Skateboard locavore cornhole
-                              fashion axe, Austin Vice four loko paleo
-                              plaid lomo. Lo-fi sustainable drinking
-                              vinegar American Apparel, listicle fashion
-                              axe cliche try-hard tattooed trust fund
-                              freegan.
-                              Four loko meditation VHS 3
-                              wolf
-                              moon put a bird on it. Chia asymmetrical
-                              dreamcatcher, literally irony selvage
-                              church-key k
-                              ale chips post-ir
-                              onic meh raw
-                              denim synth lumbersexual roof party.
-                              Skateboard food truck asymmetrical,
-                              bespoke cornhole actually vegan
-                              Bushwick American Apparel Intelligentsia
-                              Vice cliche kale chips. Vice aesthetic
-                              Portland put a bird on it DIY fixie, wolf jean
-                              shorts chia swag meh Tumblr quinoa
-                              Pitchfork gluten-free
+                              <b>Animal Model</b>: Mouse<br><b>Brain Area</b>: Hippocampus, CA1<br><b>Indicator</b>: GCaMP3<br><b>Notes</b>: Decoding CA1 place fields in a linear track.<br><b>Courtesy Of</b>: Ziv, et. al., Nature Neuroscience, 2013.<br>
                             </p>
                           </div>
-                          <h2 class="description-header" data-target="#mouse-hippocampus-carousel" data-slide="1">
-                            Title of Video 2 Display
+                          <h2 class="description-header" data-carousel="#mouse-hippocampus-carousel" data-slide="1">
+                            Dentate Gyrus
                           </h2>
-                          <div id="mouse-hippocampus-vid-description" class="carousel-description" data-target="#mouse-hippocampus-carousel" data-slide="1">
+                          <div id="mouse-hippocampus-vid-description" class="carousel-description" data-carousel="#mouse-hippocampus-carousel" data-slide="1">
                             <p>
-                              Fixie gluten-free selvage YOLO Odd Future
-                              health goth. Skateboard locavore cornhole
-                              fashion axe, Austin Vice four loko paleo
-                              plaid lomo. Lo-fi sustainable drinking
-                              vinegar American Apparel, listicle fashion
-                              axe cliche try-hard tattooed trust fund
-                              freegan.
-                              Four loko meditation VHS 3
-                              wolf
-                              moon put a bird on it. Chia asymmetrical
-                              dreamcatcher, literally irony selvage
-                              church-key k
-                              ale chips post-ir
-                              onic meh raw
-                              denim synth lumbersexual roof party.
-                              Skateboard food truck asymmetrical,
-                              bespoke cornhole actually vegan
-                              Bushwick American Apparel Intelligentsia
-                              Vice cliche kale chips. Vice aesthetic
-                              Portland put a bird on it DIY fixie, wolf jean
-                              shorts chia swag meh Tumblr quinoa
-                              Pitchfork gluten-free
-                            </p>
-                          </div>
-                          <h2 class="description-header" data-target="#mouse-hippocampus-carousel" data-slide="2">
-                            Title of Video 3 Display
-                          </h2>
-                          <div id="mouse-hippocampus-vid-description" class="carousel-description" data-target="#mouse-hippocampus-carousel" data-slide="2">
-                            <p>
-                              Fixie gluten-free selvage YOLO Odd Future
-                              health goth. Skateboard locavore cornhole
-                              fashion axe, Austin Vice four loko paleo
-                              plaid lomo. Lo-fi sustainable drinking
-                              vinegar American Apparel, listicle fashion
-                              axe cliche try-hard tattooed trust fund
-                              freegan.
-                              Four loko meditation VHS 3
-                              wolf
-                              moon put a bird on it. Chia asymmetrical
-                              dreamcatcher, literally irony selvage
-                              church-key k
-                              ale chips post-ir
-                              onic meh raw
-                              denim synth lumbersexual roof party.
-                              Skateboard food truck asymmetrical,
-                              bespoke cornhole actually vegan
-                              Bushwick American Apparel Intelligentsia
-                              Vice cliche kale chips. Vice aesthetic
-                              Portland put a bird on it DIY fixie, wolf jean
-                              shorts chia swag meh Tumblr quinoa
-                              Pitchfork gluten-free
+                              <b>Animal Model</b>: Mouse<br><b>Brain Area</b>: Dentate Gyrus<br><b>Indicator</b>: GCaMP6<br><b>Courtesy Of</b>: Stuber Lab, UNC<br>
                             </p>
                           </div>
                         </div><!-- END Description -->
@@ -360,7 +271,7 @@
                       <div class="pure-g">
 
                         <div class="pure-u-1">
-                          <p class="menu-title">Striatum</p>
+                          <p class="menu-title"></p>
                         </div>
 
                         <!-- Video Carousel -->
@@ -373,9 +284,7 @@
                                 <div class="carousel-inner" role="listbox">
                                   <div class="item active">
                                     <div class="video-container">
-                                      <video id="mouse-striatum-vid" class="video" name="media" controls>
-                                        <source src="media/StriatumOperant-SD.mp4" type="video/mp4">
-                                      </video>
+                                      <iframe width="100%" height="315" src="http://www.youtube.com/embed/qqcQWBQ626w" frameborder="0" allowfullscreen></iframe>
                                     </div>
                                   </div>
                                 </div>
@@ -397,8 +306,8 @@
                               <div class="pure-g">
 
                                 <div class="pure-u-1-6 video-btn-container" data-target="#mouse-striatum-carousel" data-slide-to="0">
-                                  <div class="video-btn" data-video="#mouse-striatum-vid"></div>
-                                  <p class="video-title">StriatumOperant-SD</p>
+                                  <div class="video-btn" data-video="#mouse-striatum-vid" style="background-image: url('http://i.imgur.com/Et2vyOu.png')"></div>
+                                  <p class="video-title">Striatum Operant Conditioning</p>
                                 </div>
 
                               </div>
@@ -411,31 +320,10 @@
 
                         <!-- Description -->
                         <div class="pure-u-7-24">
-                          <h2 class="description-header">Title of Video 1 Display</h2>
+                          <h2 class="description-header">Operant Conditioning</h2>
                           <div id="mouse-striatum-vid-description" class="carousel-description">
                             <p>
-                              Fixie gluten-free selvage YOLO Odd Future
-                              health goth. Skateboard locavore cornhole
-                              fashion axe, Austin Vice four loko paleo
-                              plaid lomo. Lo-fi sustainable drinking
-                              vinegar American Apparel, listicle fashion
-                              axe cliche try-hard tattooed trust fund
-                              freegan.
-                              Four loko meditation VHS 3
-                              wolf
-                              moon put a bird on it. Chia asymmetrical
-                              dreamcatcher, literally irony selvage
-                              church-key k
-                              ale chips post-ir
-                              onic meh raw
-                              denim synth lumbersexual roof party.
-                              Skateboard food truck asymmetrical,
-                              bespoke cornhole actually vegan
-                              Bushwick American Apparel Intelligentsia
-                              Vice cliche kale chips. Vice aesthetic
-                              Portland put a bird on it DIY fixie, wolf jean
-                              shorts chia swag meh Tumblr quinoa
-                              Pitchfork gluten-free
+                             <b>Animal Model</b>: Mouse<br><b>Brain Area</b>: Nucleus Accumbens<br><b>Indicator</b>: GCaMP6<br><b>Notes</b>: Nucleus accumbens MSNs during reward learning in Med Associates operant conditioning chambers.<br><b>Courtesy Of</b>: Stuber Lab, UNC
                             </p>
                           </div>
                         </div><!-- END Description -->
@@ -448,7 +336,7 @@
                       <div class="pure-g">
 
                         <div class="pure-u-1">
-                          <p class="menu-title">Hypothalamus</p>
+                          <p class="menu-title"></p>
                         </div>
 
                         <!-- Video Carousel -->
@@ -461,9 +349,7 @@
                                 <div class="carousel-inner" role="listbox">
                                   <div class="item active">
                                     <div class="video-container">
-                                      <video id="mouse-hypothalamus-vid" class="video" name="media" controls>
-                                        <source src="media/HypothalamusDataVideo.mp4" type="video/mp4">
-                                      </video>
+                                      <iframe width="100%" height="315" src="http://www.youtube.com/embed/2gNuQ__cGZs" frameborder="0" allowfullscreen></iframe>
                                     </div>
                                   </div>
                                 </div>
@@ -485,8 +371,8 @@
                               <div class="pure-g">
 
                                 <div class="pure-u-1-6 video-btn-container" data-target="#mouse-hypothalamus-carousel" data-slide-to="0">
-                                  <div class="video-btn" data-video="#mouse-hypothalamus-vid"></div>
-                                  <p class="video-title">HypothalamusDataVideo</p>
+                                  <div class="video-btn" data-video="#mouse-hypothalamus-vid" style="background-image: url('http://i.imgur.com/MAchGpH.png')"></div>
+                                  <p class="video-title">Hypothalamus Operant Conditioning</p>
                                 </div>
 
                               </div>
@@ -499,38 +385,16 @@
 
                         <!-- Description -->
                         <div class="pure-u-7-24">
-                          <h2 class="description-header">Title of Video 1 Display</h2>
+                          <h2 class="description-header">Operant Conditioning</h2>
                           <div id="mouse-hypothalamus-vid-description" class="carousel-description">
                             <p>
-                              Fixie gluten-free selvage YOLO Odd Future
-                              health goth. Skateboard locavore cornhole
-                              fashion axe, Austin Vice four loko paleo
-                              plaid lomo. Lo-fi sustainable drinking
-                              vinegar American Apparel, listicle fashion
-                              axe cliche try-hard tattooed trust fund
-                              freegan.
-                              Four loko meditation VHS 3
-                              wolf
-                              moon put a bird on it. Chia asymmetrical
-                              dreamcatcher, literally irony selvage
-                              church-key k
-                              ale chips post-ir
-                              onic meh raw
-                              denim synth lumbersexual roof party.
-                              Skateboard food truck asymmetrical,
-                              bespoke cornhole actually vegan
-                              Bushwick American Apparel Intelligentsia
-                              Vice cliche kale chips. Vice aesthetic
-                              Portland put a bird on it DIY fixie, wolf jean
-                              shorts chia swag meh Tumblr quinoa
-                              Pitchfork gluten-free
+                             <b>Animal Model</b>: Mouse<br><b>Brain Area</b>: Hypothalamus<br><b>Indicator</b>: GCaMP6<br><b>Notes</b>: Hypothalamus operant conditioning during reward learning in Med Associates operant conditioning chambers.<br><b>Courtesy Of</b>: Stuber Lab, UNC
                             </p>
                           </div>
                         </div><!-- END Description -->
 
                       </div>
                     </div><!-- END HYPOTHALAMUS DESCRIPTION -->
-
                   </div>
                 </div>
 
@@ -625,7 +489,7 @@
                           <div class="pure-g">
 
                             <div class="pure-u-1">
-                              <div id="rat-cortex-carousel" class="carousel slide" data-ride="carousel" data-interval="false">
+                              <div id="rat-cortex-carousel" class="carousel slide" data-ride="carousel">
                                 <!-- Wrapper for slides -->
                                 <div class="carousel-inner" role="listbox">
                                   <div class="item active">
@@ -702,7 +566,7 @@
                           <div class="pure-g">
 
                             <div class="pure-u-1">
-                              <div id="rat-hippocampus-carousel" class="carousel slide" data-ride="carousel" data-interval="false">
+                              <div id="rat-hippocampus-carousel" class="carousel slide" data-ride="carousel">
                                 <!-- Wrapper for slides -->
                                 <div class="carousel-inner" role="listbox">
                                   <div class="item active">
@@ -768,10 +632,10 @@
 
                         <!-- Description -->
                         <div class="pure-u-7-24">
-                          <h2 class="description-header" data-target="#rat-hippocampus-carousel" data-slide="0">
+                          <h2 class="description-header" data-carousel="#rat-hippocampus-carousel" data-slide="0">
                             Title of Video 1 Display
                           </h2>
-                          <div id="rat-hippocampus-vid-description" class="carousel-description" data-target="#rat-hippocampus-carousel" data-slide="0">
+                          <div id="rat-hippocampus-vid-description" class="carousel-description" data-carousel="#rat-hippocampus-carousel" data-slide="0">
                             <p>
                               Fixie gluten-free selvage YOLO Odd Future
                               health goth. Skateboard locavore cornhole
@@ -797,10 +661,10 @@
                               Pitchfork gluten-free
                             </p>
                           </div>
-                          <h2 class="description-header" data-target="#rat-hippocampus-carousel" data-slide="1">
+                          <h2 class="description-header" data-carousel="#rat-hippocampus-carousel" data-slide="1">
                             Title of Video 2 Display
                           </h2>
-                          <div id="rat-hippocampus-vid-description" class="carousel-description" data-target="#rat-hippocampus-carousel" data-slide="1">
+                          <div id="rat-hippocampus-vid-description" class="carousel-description" data-carousel="#rat-hippocampus-carousel" data-slide="1">
                             <p>
                               Fixie gluten-free selvage YOLO Odd Future
                               health goth. Skateboard locavore cornhole
@@ -826,10 +690,10 @@
                               Pitchfork gluten-free
                             </p>
                           </div>
-                          <h2 class="description-header" data-target="#rat-hippocampus-carousel" data-slide="2">
+                          <h2 class="description-header" data-carousel="#rat-hippocampus-carousel" data-slide="2">
                             Title of Video 3 Display
                           </h2>
-                          <div id="rat-hippocampus-vid-description" class="carousel-description" data-target="#rat-hippocampus-carousel" data-slide="2">
+                          <div id="rat-hippocampus-vid-description" class="carousel-description" data-carousel="#rat-hippocampus-carousel" data-slide="2">
                             <p>
                               Fixie gluten-free selvage YOLO Odd Future
                               health goth. Skateboard locavore cornhole
@@ -873,7 +737,7 @@
                           <div class="pure-g">
 
                             <div class="pure-u-1">
-                              <div id="rat-striatum-carousel" class="carousel slide" data-ride="carousel" data-interval="false">
+                              <div id="rat-striatum-carousel" class="carousel slide" data-ride="carousel">
                                 <!-- Wrapper for slides -->
                                 <div class="carousel-inner" role="listbox">
                                   <div class="item active">
@@ -960,7 +824,7 @@
                           <div class="pure-g">
 
                             <div class="pure-u-1">
-                              <div id="rat-hypothalamus-carousel" class="carousel slide" data-ride="carousel" data-interval="false">
+                              <div id="rat-hypothalamus-carousel" class="carousel slide" data-ride="carousel">
                                 <!-- Wrapper for slides -->
                                 <div class="carousel-inner" role="listbox">
                                   <div class="item active">
